@@ -1743,9 +1743,12 @@ export default function App() {
 function Brand() {
   return (
     <div className="flex items-center gap-3">
-      <div className="grid h-12 w-12 place-items-center rounded-2xl bg-amber-300 text-slate-950">
-        <PawPrint />
-      </div>
+      <img
+        src="/icon-192.png"
+        alt="Boubou Coach"
+        className="h-12 w-12 rounded-2xl object-cover"
+      />
+
       <div>
         <p className="text-lg font-black leading-none">Boubou</p>
         <p className="text-sm font-bold text-white/60">Coach</p>

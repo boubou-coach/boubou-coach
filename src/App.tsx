@@ -1696,14 +1696,14 @@ export default function App() {
           </section>
 
           <nav className="fixed bottom-0 left-0 right-0 z-30 border-t border-black/5 bg-white/95 px-3 py-2 backdrop-blur lg:hidden">
-            <div className="mx-auto grid max-w-md grid-cols-4 gap-1">
+          <div className="mx-auto flex max-w-md justify-around gap-1">
               {nav.map((item) => {
                 const Icon = item.icon;
                 return (
                   <button
                     key={item.id}
                     onClick={() => setTab(item.id)}
-                    className={`rounded-2xl px-2 py-2 text-xs font-bold ${
+                    className={`flex flex-1 min-w-0 flex-col items-center rounded-2xl px-1 py-2 text-[11px] font-bold ${
                       tab === item.id
                         ? 'bg-[#101827] text-white'
                         : 'text-slate-500'
@@ -1779,7 +1779,7 @@ function MobileMenu({ nav, tab, setTab, close }: any) {
   return (
     <div className="fixed inset-0 z-50 bg-black/40 lg:hidden">
       <div className="h-full w-80 bg-[#101827] p-6 text-white">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-around">
           <Brand />
           <button onClick={close}>
             <X />
@@ -1924,7 +1924,7 @@ function LessonsScreen({
         </div>
       </div>
 
-      <div className="flex gap-2 overflow-x-auto pb-3 pr-10 scrollbar-hide">
+      <div className="category-scroll flex gap-2 overflow-x-auto pb-3 pr-10 scrollbar-hide">
       <button
   onClick={() => setCategory("Plans premium")}
   className="rounded-full bg-amber-300 px-4 py-2 text-sm font-black text-slate-950"

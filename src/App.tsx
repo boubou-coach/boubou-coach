@@ -2155,6 +2155,34 @@ function LessonBlock({
   title: string;
   items?: string[];
 }) {
+  const safeItems = Array.isArray(items) ? items : [];
+
+  if (safeItems.length === 0) return null;
+
+  return (
+    <div className="mt-6 rounded-3xl bg-white p-5 shadow-sm">
+      <div className="flex items-center gap-2 text-orange-700">
+        <Icon size={18} />
+        <h3 className="font-black">{title}</h3>
+      </div>
+
+      <div className="mt-3 space-y-3">
+        {safeItems.map((item: string, index: number) => (
+          <p
+            key={`${title}-${index}`}
+            className="rounded-2xl bg-[#f7f1e8] p-4 text-sm font-semibold text-slate-800"
+          >
+            {item}
+          </p>
+        ))}
+      </div>
+    </div>
+  );
+}: {
+  icon: any;
+  title: string;
+  items?: string[];
+}) {
   if (!items?.length) return null;
 
   return (

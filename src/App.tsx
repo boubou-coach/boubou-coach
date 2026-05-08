@@ -1573,9 +1573,9 @@ export default function App() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#f7f1e8] text-slate-950">
+    <div className="app-shell min-h-screen bg-[#f7f1e8] text-slate-950">
       <div className="mx-auto flex min-h-screen max-w-7xl bg-[#fbf8f2] shadow-2xl lg:my-6 lg:min-h-[calc(100vh-3rem)] lg:overflow-hidden lg:rounded-[2rem]">
-        <aside className="hidden w-72 shrink-0 border-r border-black/5 bg-[#101827] p-6 text-white lg:block">
+      <aside className="desktop-sidebar hidden w-72 shrink-0 border-r border-black/5 bg-[#101827] p-6 text-white lg:block">
           <Brand />
           <div className="mt-10 space-y-2">
             {nav.map((item) => (
@@ -1603,7 +1603,7 @@ export default function App() {
           </div>
         </aside>
 
-        <main className="flex min-h-screen flex-1 flex-col lg:min-h-0">
+        <main className="main-content flex min-h-screen flex-1 flex-col lg:min-h-0">
           <header className="sticky top-0 z-20 flex items-center justify-between border-b border-black/5 bg-[#fbf8f2]/90 px-5 py-4 backdrop-blur lg:px-8">
             <button
               onClick={() => setMenuOpen(true)}

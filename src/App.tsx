@@ -1582,7 +1582,7 @@ useEffect(() => {
     { id: "home", label: "Accueil", icon: Home },
     { id: "lessons", label: "Leçons", icon: GraduationCap },
     { id: "programs", label: "Programmes", icon: Flame },
-    { id: "profile", label: "Mon chien", icon: PawPrint },
+    { id: "profile", label: "Mon boubou", icon: PawPrint },
     { id: "premium", label: "Premium", icon: Crown },
   ];
 
@@ -1630,18 +1630,20 @@ useEffect(() => {
               <p className="text-xs font-black uppercase tracking-[0.25em] text-amber-700">
                 Boubou Coach
               </p>
-              {deferredPrompt && (
-  <button
-    onClick={async () => {
+              <button
+  onClick={async () => {
+    if (deferredPrompt) {
       deferredPrompt.prompt();
       await deferredPrompt.userChoice;
       setDeferredPrompt(null);
-    }}
-    className="mt-4 rounded-2xl bg-[#101827] px-5 py-3 text-sm font-black text-white"
-  >
-    Installer l’application
-  </button>
-)}
+    } else {
+      alert("Sur mobile : ouvre le menu du navigateur puis choisis Ajouter à l’écran d’accueil.");
+    }
+  }}
+  className="mt-4 rounded-2xl bg-[#101827] px-5 py-3 text-sm font-black text-white"
+>
+  Installer l’application
+</button>
               <h1 className="text-xl font-black tracking-tight lg:text-3xl">
                 Dressage bouledogue français
               </h1>

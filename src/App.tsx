@@ -2150,7 +2150,7 @@ function LessonBlock({
   icon: Icon,
   title,
   items,
-}: {
+} {
   icon: any;
   title: string;
   items?: string[];

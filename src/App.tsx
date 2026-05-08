@@ -2482,12 +2482,33 @@ function PremiumScreen({ premium, setPremium, premiumLessons }: any) {
           <span className="pb-2 font-bold text-slate-500">/ mois</span>
         </div>
 
-        <button
-          onClick={() => setPremium(true)}
-          className="mx-auto mt-8 flex items-center gap-2 rounded-2xl bg-amber-300 px-7 py-4 font-black text-slate-950"
-        >
-          {premium ? 'Premium activé' : 'Débloquer Premium'}
-        </button>
+          <div className="mt-4 space-y-2">
+          <a
+            href="https://buy.stripe.com/5kQfZj7Ivd1v2NpciX1wY03"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block w-full rounded-2xl bg-amber-300 px-4 py-3 text-center text-sm font-black text-slate-950"
+          >
+            Débloquer Premium
+          </a>
+        
+          <button
+            onClick={() => {
+              const code = prompt("Entre ton code premium");
+        
+              if (code?.trim().toUpperCase() === "BOUBOU2026") {
+                setPremium(true);
+                alert("Premium activé 🎉");
+              } else {
+                alert("Code incorrect");
+              }
+            }}
+            className="w-full rounded-2xl border border-white/20 px-4 py-3 text-sm font-bold text-white"
+          >
+            J’ai un code premium
+          </button>
+        </div>
+    
       </div>
 
       <div className="mt-6 grid gap-4 sm:grid-cols-2">

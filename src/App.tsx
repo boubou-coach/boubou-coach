@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from 'react';
 import {
   Home,
   GraduationCap,
@@ -1464,6 +1464,20 @@ const categories = [
 ];
 
 export default function App() {
+  const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
+
+useEffect(() => {
+  const handler = (e: any) => {
+    e.preventDefault();
+    setDeferredPrompt(e);
+  };
+
+  window.addEventListener('beforeinstallprompt', handler);
+
+  return () => {
+    window.removeEventListener('beforeinstallprompt', handler);
+  };
+}, []);
   const [tab, setTab] = useState('home');
   const [premium, setPremium] = useState(() => {
     return localStorage.getItem("boubou-premium") === "true";
@@ -1616,6 +1630,18 @@ export default function App() {
               <p className="text-xs font-black uppercase tracking-[0.25em] text-amber-700">
                 Boubou Coach
               </p>
+              {deferredPrompt && (
+  <button
+    onClick={async () => {
+      deferredPrompt.prompt();
+      await deferredPrompt.userChoice;
+      setDeferredPrompt(null);
+    }}
+    className="mt-4 rounded-2xl bg-[#101827] px-5 py-3 text-sm font-black text-white"
+  >
+    Installer l’application
+  </button>
+)}
               <h1 className="text-xl font-black tracking-tight lg:text-3xl">
                 Dressage bouledogue français
               </h1>

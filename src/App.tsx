@@ -2145,12 +2145,11 @@ function LessonModal({ lesson, done, onClose, onValidate }: any) {
     </div>
   );
 }
-
 function LessonBlock({
   icon: Icon,
   title,
   items,
-} {
+}: {
   icon: any;
   title: string;
   items?: string[];
@@ -2177,7 +2176,6 @@ function LessonBlock({
     </div>
   );
 }
-
 function ProfileScreen({
   dogName,
   setDogName,

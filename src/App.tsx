@@ -46,473 +46,826 @@ type Lesson = {
 
 const baseLessons: Lesson[] = [
   {
-    id: 'free-01',
-    free: true,
-    category: 'Bases essentielles',
-    title: 'Créer une routine d’éducation en 5 minutes',
-    level: 'Débutant',
-    duration: '5 min',
-    goal: 'Installer une routine courte, régulière et réaliste pour apprendre sans fatiguer ton bouledogue.',
-    intro:
-      'Le bouledogue français apprend mieux avec des séances courtes et prévisibles. L’objectif n’est pas de tout corriger d’un coup, mais de répéter souvent de petites réussites.',
-    steps: [
-      'Choisis un moment calme : avant le repas, après une petite sortie ou quand ton chien est disponible.',
-      'Prépare 5 à 8 mini-récompenses pour garder une séance courte.',
-      'Travaille un seul objectif : assis, rappel, panier ou calme.',
-      'Termine dès qu’il réussit, même si la séance n’a duré que 3 minutes.',
-      'Note mentalement ce qui a marché pour refaire pareil le lendemain.',
-    ],
-    mistakes: [
-      'Faire une séance trop longue.',
-      'Changer d’exercice sans arrêt.',
-      'Continuer quand le chien décroche.',
-    ],
-    homework:
-      'Pendant 3 jours, fais une seule séance de 5 minutes par jour avec le même exercice.',
-  },
-  {
-    id: 'free-02',
-    free: true,
-    category: 'Bases essentielles',
-    title: 'Apprendre le assis sans forcer',
-    level: 'Débutant',
-    duration: '5 min',
-    goal: 'Obtenir un assis naturel sans appuyer sur son dos ni répéter l’ordre en boucle.',
-    intro:
-      'Le assis est une base très utile : avant la gamelle, à la porte, pour saluer calmement ou attendre quelques secondes.',
-    steps: [
-      'Tiens une friandise devant son nez sans la donner tout de suite.',
-      'Remonte doucement la friandise vers le haut de sa tête.',
-      'Quand ses fesses touchent le sol, dis “assis” puis récompense immédiatement.',
-      'Répète 5 fois maximum, puis fais une pause.',
-      'Quand il comprend, dis “assis” juste avant le geste de la friandise.',
-    ],
-    mistakes: [
-      'Appuyer sur son dos.',
-      'Dire “assis” dix fois.',
-      'Trop lever la friandise et le faire sauter.',
-    ],
-    homework:
-      'Demande un assis avant la gamelle pendant 3 repas, sans insister plus de 10 secondes.',
-  },
-  {
-    id: 'free-03',
-    free: true,
-    category: 'Bases essentielles',
-    title: 'Le rappel à la maison',
-    level: 'Débutant',
-    duration: '6 min',
-    goal: 'Créer un rappel joyeux dans un environnement facile avant de le travailler dehors.',
-    intro:
-      'S’il ne revient pas dans le salon, il ne reviendra pas au parc avec les odeurs et les autres chiens. On commence donc très simple.',
-    steps: [
-      'Choisis un mot court : “viens”, “ici” ou “au pied”.',
-      'Place-toi à deux ou trois mètres de lui.',
-      'Appelle une seule fois avec une voix joyeuse.',
-      'Recule légèrement pour lui donner envie de te rejoindre.',
-      'Récompense fort quand il arrive, même s’il vient lentement.',
-    ],
-    mistakes: [
-      'L’appeler pour le gronder.',
-      'Répéter le mot en boucle.',
-      'Le punir quand il revient tard.',
-    ],
-    homework: 'Fais 5 rappels faciles par jour dans la maison pendant 4 jours.',
-  },
-  {
-    id: 'free-04',
-    free: true,
-    category: 'Bases essentielles',
-    title: 'Le calme avant la gamelle',
-    level: 'Débutant',
-    duration: '4 min',
-    goal: 'Lui apprendre à patienter quelques secondes sans sauter ni aboyer avant de manger.',
-    intro:
-      'La gamelle est très motivante. C’est un excellent moment pour enseigner le calme sans conflit.',
-    steps: [
-      'Garde la gamelle en hauteur.',
-      'Attends un micro-calme : quatre pattes au sol, silence ou regard vers toi.',
-      'Descends doucement la gamelle.',
-      'S’il saute, remonte-la calmement sans parler fort.',
-      'Dès qu’il se calme une seconde, pose la gamelle.',
-    ],
-    mistakes: [
-      'Demander un calme parfait le premier jour.',
-      'Crier pendant qu’il s’excite.',
-      'Faire durer l’exercice trop longtemps.',
-    ],
-    homework: 'Travaille cet exercice à chaque repas pendant une semaine.',
-  },
-  {
-    id: 'free-05',
-    free: true,
-    category: 'Bases essentielles',
-    title: 'Dire non sans braquer son bouledogue',
-    level: 'Débutant',
-    duration: '7 min',
-    goal: 'Remplacer le conflit par une redirection claire vers un comportement autorisé.',
-    intro:
-      'Certains bouledogues se braquent quand on insiste trop. Le but n’est pas seulement d’interdire, mais de montrer quoi faire à la place.',
-    steps: [
-      'Repère le comportement gênant : sauter, mordiller, voler un objet.',
-      'Dis un mot neutre comme “stop” une seule fois.',
-      'Propose tout de suite une alternative : jouet, panier, assis ou rappel.',
-      'Récompense l’alternative dès qu’il la choisit.',
-      'Range ou éloigne ce qui déclenche la bêtise si possible.',
-    ],
-    mistakes: [
-      'Répéter “non” en boucle.',
-      'Courir après lui quand il vole un objet.',
-      'Donner beaucoup d’attention au mauvais comportement.',
-    ],
-    homework:
-      'Choisis un comportement gênant et prépare une alternative avant qu’il recommence.',
-  },
-  {
-    id: 'free-06',
-    free: true,
-    category: 'Bases essentielles',
-    title: 'Récompenser au bon moment',
-    level: 'Débutant',
-    duration: '5 min',
-    goal: 'Comprendre le bon timing pour que ton chien sache exactement ce qu’il a réussi.',
-    intro:
-      'Une récompense donnée trop tard peut renforcer autre chose que le comportement voulu. Le timing fait toute la différence.',
-    steps: [
-      'Choisis un comportement simple : regard, assis ou retour vers toi.',
-      'Dis “oui” au moment précis où il le fait.',
-      'Donne la friandise juste après le “oui”.',
-      'Répète sur des mini-actions faciles.',
-      'Garde une voix calme et constante.',
-    ],
-    mistakes: [
-      'Récompenser quand le chien est déjà reparti.',
-      'Récompenser après un saut involontaire.',
-      'Parler trop et rater le bon moment.',
-    ],
-    homework:
-      'Pendant une journée, dis “oui” et récompense dès qu’il te regarde spontanément.',
-  },
-  {
-    id: 'free-07',
-    free: true,
-    category: 'Bases essentielles',
-    title: 'Apprendre à attendre à la porte',
-    level: 'Débutant',
-    duration: '6 min',
-    goal: 'Éviter qu’il se précipite dehors dès que la porte s’ouvre.',
-    intro:
-      'L’attente à la porte améliore la sécurité et diminue l’excitation avant la promenade.',
-    steps: [
-      'Mets la laisse avant d’ouvrir.',
-      'Attends un petit calme ou demande un assis.',
-      'Ouvre la porte de quelques centimètres.',
-      'S’il fonce, referme doucement.',
-      'S’il attend, dis “ok” et sors avec lui.',
-    ],
-    mistakes: [
-      'Ouvrir grand la porte trop vite.',
-      'Tirer brusquement sur la laisse.',
-      'Demander une attente trop longue au départ.',
-    ],
-    homework:
-      'Travaille une seule sortie par jour en mode calme pendant une semaine.',
-  },
-  {
-    id: 'free-08',
-    free: true,
-    category: 'Bases essentielles',
-    title: 'Le panier comme zone positive',
-    level: 'Débutant',
-    duration: '8 min',
-    goal: 'Faire du panier un endroit agréable, pas une punition.',
-    intro:
-      'Un chien va plus facilement au panier si cet endroit annonce confort, friandises et tranquillité.',
-    steps: [
-      'Place le panier dans un lieu calme mais pas isolé.',
-      'Dépose une friandise dedans sans rien demander.',
-      'Quand il y va, félicite calmement.',
-      'Ajoute le mot “panier” quand il entre dedans.',
-      'Laisse-le ressortir librement au début.',
-    ],
-    mistakes: [
-      'L’envoyer au panier pour le punir.',
-      'Le forcer à rester trop longtemps.',
-      'Placer le panier dans un lieu bruyant.',
-    ],
-    homework:
-      'Dépose 3 surprises par jour dans son panier pendant une semaine.',
-  },
-  {
-    id: 'free-09',
-    free: true,
-    category: 'Bases essentielles',
-    title: 'Comprendre les signes de fatigue',
-    level: 'Tous niveaux',
-    duration: '5 min',
-    goal: 'Savoir quand arrêter une séance avant que ton bouledogue ne sature.',
-    intro:
-      'Le bouledogue peut vite fatiguer, surtout avec la chaleur, l’excitation ou les efforts trop longs.',
-    steps: [
-      'Observe s’il détourne la tête ou renifle partout.',
-      'Note s’il prend les friandises plus lentement.',
-      'Arrête si sa respiration devient forte.',
-      'Fais une pause eau et calme.',
-      'Reprends plus tard avec un exercice plus simple.',
-    ],
-    mistakes: [
-      'Penser qu’il est têtu alors qu’il est fatigué.',
-      'Travailler en pleine chaleur.',
-      'Vouloir finir absolument l’exercice prévu.',
-    ],
-    homework:
-      'Lors des prochaines séances, note le moment où il commence à décrocher.',
-  },
-  {
-    id: 'free-10',
-    free: true,
-    category: 'Bases essentielles',
-    title: 'Choisir les bonnes récompenses',
-    level: 'Débutant',
-    duration: '6 min',
-    goal: 'Trouver ce qui motive vraiment ton chien selon l’exercice et l’environnement.',
-    intro:
-      'Tous les chiens ne travaillent pas pour la même chose. Certains veulent de la nourriture, d’autres du jeu ou une voix douce.',
-    steps: [
-      'Prépare trois récompenses différentes.',
-      'Teste-les dans la maison.',
-      'Garde les meilleures pour le rappel et les exercices difficiles.',
-      'Utilise de tout petits morceaux.',
-      'Varie parfois pour éviter la lassitude.',
-    ],
-    mistakes: [
-      'Utiliser une récompense trop faible dehors.',
-      'Donner de gros morceaux à chaque fois.',
-      'Croire qu’une caresse motive tous les chiens.',
-    ],
-    homework: 'Fais un mini-test de préférence avec 3 récompenses différentes.',
-  },
+    {
+      id: "free-01",
+      free: true,
+      category: "Bases essentielles",
+      title: "Créer une routine d’éducation en 5 minutes",
+      level: "Débutant",
+      duration: "5 min",
+      goal: "Installer une petite routine quotidienne pour apprendre sans fatiguer ton bouledogue.",
+      intro: "Le bouledogue français apprend mieux avec des séances courtes, régulières et positives. Une routine de 5 minutes est plus efficace qu’une longue séance faite une fois de temps en temps.",
+      why: "Une routine claire rassure ton chien et rend l’apprentissage plus facile. Il comprend qu’à certains moments de la journée, on travaille calmement, on réussit quelque chose, puis on passe à autre chose. C’est idéal pour créer de bonnes habitudes sans pression.",
+      before: [
+        "Choisis toujours le même moment de la journée au début.",
+        "Prépare 5 à 8 petites récompenses.",
+        "Éloigne les distractions : télévision, enfants qui courent, autres animaux.",
+        "Prévois un seul exercice par séance.",
+        "Arrête avant que ton chien se lasse."
+      ],
+      progress: [
+        "Jour 1 : fais une séance de 3 minutes seulement.",
+        "Jour 2 : répète le même exercice au même moment.",
+        "Jour 3 : augmente à 5 minutes si ton chien reste motivé.",
+        "Jour 4 : ajoute une petite difficulté, comme une seconde d’attente.",
+        "Jour 5 et plus : garde cette routine comme un rendez-vous quotidien."
+      ],
+      steps: [
+        "Choisis un exercice simple : assis, rappel, panier ou regard.",
+        "Prépare les récompenses avant d’appeler ton chien.",
+        "Fais 3 à 5 répétitions maximum.",
+        "Récompense rapidement chaque réussite.",
+        "Termine par une réussite facile."
+      ],
+      success: [
+        "Ton chien vient plus facilement quand tu l’appelles pour travailler.",
+        "Il reste concentré quelques minutes.",
+        "Il réussit l’exercice sans excitation excessive.",
+        "Tu sens que la séance devient plus fluide.",
+        "Il garde une attitude positive après l’exercice."
+      ],
+      mistakes: [
+        "Faire une séance trop longue.",
+        "Changer d’exercice toutes les 30 secondes.",
+        "Continuer alors que le chien décroche.",
+        "S’énerver s’il ne comprend pas.",
+        "Vouloir tout corriger en une seule fois."
+      ],
+      troubleshooting: [
+        "S’il part, réduis la durée de la séance.",
+        "S’il saute ou aboie, commence après une petite balade.",
+        "S’il ignore les récompenses, teste une friandise plus motivante.",
+        "S’il est trop excité, fais l’exercice dans un endroit plus calme.",
+        "S’il échoue plusieurs fois, reviens à une étape plus simple."
+      ],
+      homework: "Pendant 5 jours, fais une séance de 5 minutes maximum avec le même exercice."
+    },
+    {
+      id: "free-02",
+      free: true,
+      category: "Bases essentielles",
+      title: "Apprendre le assis sans forcer",
+      level: "Débutant",
+      duration: "5 min",
+      goal: "Obtenir un assis naturel sans appuyer sur le dos du chien.",
+      intro: "Le assis est l’un des premiers exercices utiles au quotidien. Il peut servir avant la gamelle, avant de sortir, avant une caresse ou pour demander un moment de calme.",
+      why: "Apprendre le assis sans contrainte permet à ton bouledogue de comprendre par lui-même ce qui est attendu. Il devient acteur de l’exercice au lieu de subir une manipulation physique.",
+      before: [
+        "Prépare une friandise très odorante.",
+        "Place-toi devant ton chien dans un endroit calme.",
+        "Évite de travailler s’il est surexcité.",
+        "Garde une voix douce.",
+        "Ne touche pas son dos pour le faire s’asseoir."
+      ],
+      progress: [
+        "Étape 1 : utilise la friandise comme guide.",
+        "Étape 2 : dis “assis” au moment où il pose les fesses.",
+        "Étape 3 : dis “assis” juste avant le geste.",
+        "Étape 4 : réduis progressivement le geste de la main.",
+        "Étape 5 : demande le assis dans des situations simples du quotidien."
+      ],
+      steps: [
+        "Tiens une friandise devant son nez.",
+        "Remonte lentement la friandise vers le haut de sa tête.",
+        "Dès que ses fesses touchent le sol, dis “oui”.",
+        "Donne immédiatement la récompense.",
+        "Répète 5 fois maximum puis fais une pause."
+      ],
+      success: [
+        "Ton chien s’assoit sans que tu le touches.",
+        "Il regarde la friandise puis propose le mouvement.",
+        "Il comprend le mot “assis” plus rapidement.",
+        "Il reste calme pendant l’exercice.",
+        "Tu peux l’utiliser avant la gamelle ou la porte."
+      ],
+      mistakes: [
+        "Appuyer sur son dos.",
+        "Répéter “assis” dix fois.",
+        "Lever la friandise trop haut et le faire sauter.",
+        "Travailler trop longtemps.",
+        "Récompenser trop tard."
+      ],
+      troubleshooting: [
+        "S’il saute, baisse la friandise près de son nez.",
+        "S’il recule, travaille près d’un mur ou dans un coin calme.",
+        "S’il ne s’assoit pas, attends un mouvement naturel et récompense.",
+        "S’il se lasse, arrête et reprends plus tard.",
+        "S’il se couche directement, récompense d’abord les débuts de mouvement."
+      ],
+      homework: "Demande un assis avant la gamelle pendant 3 jours, sans insister plus de 10 secondes."
+    },
+    {
+      id: "free-03",
+      free: true,
+      category: "Bases essentielles",
+      title: "Le rappel à la maison",
+      level: "Débutant",
+      duration: "6 min",
+      goal: "Créer un rappel joyeux dans un environnement facile.",
+      intro: "Avant de demander à ton bouledogue de revenir dehors, il doit comprendre le rappel dans un lieu simple. La maison est parfaite pour créer une première association positive.",
+      why: "Le rappel est un exercice de sécurité. Plus ton chien associe le fait de revenir à quelque chose d’agréable, plus il aura envie de répondre quand tu l’appelles.",
+      before: [
+        "Choisis un mot unique : “viens”, “ici” ou “au pied”.",
+        "Prépare une récompense spéciale.",
+        "Travaille quand ton chien n’est pas occupé à dormir ou manger.",
+        "Place-toi à courte distance.",
+        "Ne l’appelle jamais pour le gronder."
+      ],
+      progress: [
+        "Jour 1 : rappel à 1 ou 2 mètres.",
+        "Jour 2 : rappel depuis une autre pièce.",
+        "Jour 3 : rappel quand il est légèrement distrait.",
+        "Jour 4 : ajoute un petit jeu après le retour.",
+        "Jour 5 : commence à tester dans un couloir ou jardin sécurisé."
+      ],
+      steps: [
+        "Place-toi à quelques mètres de ton chien.",
+        "Dis son prénom puis ton mot de rappel une seule fois.",
+        "Recule légèrement pour lui donner envie de venir.",
+        "Récompense fortement quand il arrive.",
+        "Laisse-le repartir après la récompense."
+      ],
+      success: [
+        "Ton chien vient avec plus d’enthousiasme.",
+        "Il répond après un seul appel.",
+        "Il revient même si tu n’as pas la friandise visible.",
+        "Il ne fuit pas après être revenu.",
+        "Il associe le rappel à un moment positif."
+      ],
+      mistakes: [
+        "L’appeler pour le punir.",
+        "Répéter le mot de rappel en boucle.",
+        "Le rattacher ou l’enfermer à chaque rappel.",
+        "Être énervé quand il arrive lentement.",
+        "Tester trop vite dans un lieu difficile."
+      ],
+      troubleshooting: [
+        "S’il ne vient pas, réduis la distance.",
+        "S’il te regarde sans bouger, recule en l’encourageant.",
+        "S’il vient lentement, récompense quand même.",
+        "S’il ignore l’appel, choisis un meilleur moment.",
+        "S’il fuit, ne cours pas après lui : rends-toi plus intéressant."
+      ],
+      homework: "Fais 5 rappels faciles par jour dans la maison pendant 4 jours."
+    },
+    {
+      id: "free-04",
+      free: true,
+      category: "Bases essentielles",
+      title: "Le calme avant la gamelle",
+      level: "Débutant",
+      duration: "4 min",
+      goal: "Apprendre à patienter quelques secondes avant de manger.",
+      intro: "La gamelle est un moment très motivant. C’est donc une occasion parfaite pour apprendre à ton bouledogue que le calme permet d’obtenir ce qu’il veut.",
+      why: "Cet exercice apprend au chien à se contrôler dans une situation excitante. Ce petit apprentissage peut ensuite aider pour la porte, les invités ou les friandises.",
+      before: [
+        "Prépare la gamelle comme d’habitude.",
+        "Garde-la en hauteur au départ.",
+        "Ne cherche pas un calme parfait le premier jour.",
+        "Travaille dans le silence autant que possible.",
+        "Garde une attitude posée."
+      ],
+      progress: [
+        "Jour 1 : attendre une seconde de calme.",
+        "Jour 2 : attendre deux secondes.",
+        "Jour 3 : demander quatre pattes au sol.",
+        "Jour 4 : ajouter un assis si ton chien le connaît.",
+        "Jour 5 : poser la gamelle uniquement après le signal de calme."
+      ],
+      steps: [
+        "Tiens la gamelle hors de portée.",
+        "Attends un micro-calme : silence, regard ou pattes au sol.",
+        "Descends doucement la gamelle.",
+        "S’il saute, remonte-la sans parler fort.",
+        "Dès qu’il se calme, pose la gamelle."
+      ],
+      success: [
+        "Ton chien saute moins à l’heure du repas.",
+        "Il comprend que le calme fait avancer la situation.",
+        "Il attend quelques secondes sans aboyer.",
+        "Il regarde davantage vers toi.",
+        "Le repas devient plus posé."
+      ],
+      mistakes: [
+        "Crier quand il s’excite.",
+        "Demander une attente trop longue dès le début.",
+        "Poser la gamelle pendant qu’il saute.",
+        "Faire durer l’exercice trop longtemps.",
+        "Changer la règle d’un repas à l’autre."
+      ],
+      troubleshooting: [
+        "S’il aboie, attends une micro-pause de silence.",
+        "S’il saute beaucoup, garde la gamelle plus haut.",
+        "S’il s’énerve, simplifie l’exercice.",
+        "S’il ne tient pas l’attente, récompense une demi-seconde.",
+        "S’il recule ou stress, rends l’exercice plus facile."
+      ],
+      homework: "Travaille cet exercice à chaque repas pendant une semaine."
+    },
+    {
+      id: "free-05",
+      free: true,
+      category: "Bases essentielles",
+      title: "Dire non sans braquer son bouledogue",
+      level: "Débutant",
+      duration: "7 min",
+      goal: "Remplacer le conflit par une redirection claire.",
+      intro: "Le bouledogue français peut vite se braquer si on insiste trop. Dire non ne suffit pas : il faut surtout lui montrer quoi faire à la place.",
+      why: "Un chien comprend mieux une alternative qu’une interdiction seule. En redirigeant vers un comportement autorisé, tu évites le rapport de force et tu construis une règle plus claire.",
+      before: [
+        "Identifie le comportement que tu veux corriger.",
+        "Prépare une alternative : jouet, panier, assis ou rappel.",
+        "Range ce qui déclenche trop facilement la bêtise.",
+        "Utilise toujours le même mot court.",
+        "Reste neutre, sans crier."
+      ],
+      progress: [
+        "Étape 1 : repérer les situations qui posent problème.",
+        "Étape 2 : dire “stop” une seule fois.",
+        "Étape 3 : proposer immédiatement une alternative.",
+        "Étape 4 : récompenser l’alternative.",
+        "Étape 5 : anticiper avant que la bêtise commence."
+      ],
+      steps: [
+        "Repère le comportement gênant.",
+        "Dis “stop” calmement une seule fois.",
+        "Propose une action autorisée.",
+        "Récompense dès qu’il choisit cette action.",
+        "Répète la même stratégie plusieurs jours."
+      ],
+      success: [
+        "Ton chien se redirige plus facilement.",
+        "Il reste moins bloqué sur la bêtise.",
+        "Tu cries moins.",
+        "Les conflits diminuent.",
+        "Il commence à proposer le bon comportement seul."
+      ],
+      mistakes: [
+        "Répéter “non” en boucle.",
+        "Courir après lui quand il vole un objet.",
+        "Donner beaucoup d’attention au mauvais comportement.",
+        "Changer de mot à chaque fois.",
+        "Punir sans proposer d’alternative."
+      ],
+      troubleshooting: [
+        "S’il garde l’objet, propose un échange plus intéressant.",
+        "S’il recommence, vérifie que l’environnement n’est pas trop tentant.",
+        "S’il s’excite, baisse ton énergie.",
+        "S’il ne comprend pas, choisis une alternative plus simple.",
+        "S’il insiste beaucoup, travaille d’abord en prévention."
+      ],
+      homework: "Choisis une seule bêtise fréquente et prépare une alternative avant qu’elle arrive."
+    },
+    {
+      id: "free-06",
+      free: true,
+      category: "Bases essentielles",
+      title: "Récompenser au bon moment",
+      level: "Débutant",
+      duration: "5 min",
+      goal: "Comprendre le bon timing pour renforcer le comportement souhaité.",
+      intro: "Le chien associe la récompense à ce qu’il faisait au moment exact où elle arrive. Un bon timing peut changer complètement la vitesse d’apprentissage.",
+      why: "Si tu récompenses trop tard, ton bouledogue peut croire qu’il est récompensé pour autre chose. Le bon timing rend l’apprentissage beaucoup plus clair.",
+      before: [
+        "Choisis un comportement très simple.",
+        "Prépare les friandises dans ta main ou ta poche.",
+        "Décide d’un marqueur comme “oui”.",
+        "Travaille dans un lieu calme.",
+        "Observe précisément le moment de réussite."
+      ],
+      progress: [
+        "Étape 1 : marquer un regard avec “oui”.",
+        "Étape 2 : donner la récompense juste après.",
+        "Étape 3 : répéter sur un assis ou un rappel.",
+        "Étape 4 : utiliser le marqueur dans la vie quotidienne.",
+        "Étape 5 : récompenser aussi les bons comportements spontanés."
+      ],
+      steps: [
+        "Attends que ton chien fasse l’action souhaitée.",
+        "Dis “oui” au moment précis de la réussite.",
+        "Donne la récompense juste après.",
+        "Répète plusieurs fois sur des actions faciles.",
+        "Garde toujours le même mot de validation."
+      ],
+      success: [
+        "Ton chien comprend plus vite ce qui rapporte.",
+        "Il propose plus souvent les bons comportements.",
+        "Tu as moins besoin de répéter.",
+        "Les séances deviennent plus fluides.",
+        "Il reste motivé pendant l’apprentissage."
+      ],
+      mistakes: [
+        "Récompenser quand le chien est déjà passé à autre chose.",
+        "Dire trop de mots avant la récompense.",
+        "Récompenser un saut sans le vouloir.",
+        "Oublier de marquer la réussite.",
+        "Donner la friandise au hasard."
+      ],
+      troubleshooting: [
+        "Si ton chien ne comprend pas, choisis une action plus visible.",
+        "Si tu rates le timing, ralentis la séance.",
+        "Si tu parles trop, garde uniquement le mot “oui”.",
+        "Si le chien s’agite, attends un comportement plus calme.",
+        "Si la friandise arrive trop tard, prépare-la mieux avant."
+      ],
+      homework: "Pendant une journée, dis “oui” et récompense dès que ton chien te regarde spontanément."
+    },
+    {
+      id: "free-07",
+      free: true,
+      category: "Bases essentielles",
+      title: "Apprendre à attendre à la porte",
+      level: "Débutant",
+      duration: "6 min",
+      goal: "Éviter que ton bouledogue se précipite dehors.",
+      intro: "La porte est un moment excitant et parfois dangereux. Apprendre à attendre quelques secondes permet de sortir plus calmement et en sécurité.",
+      why: "Un chien qui fonce dès que la porte s’ouvre peut se mettre en danger. Cet exercice apprend le contrôle de soi dans une situation très concrète du quotidien.",
+      before: [
+        "Mets toujours la laisse avant l’exercice.",
+        "Travaille d’abord sur une porte intérieure si besoin.",
+        "Ne demande pas une longue attente au début.",
+        "Garde la poignée en main pour refermer doucement.",
+        "Utilise un mot de libération comme “ok”."
+      ],
+      progress: [
+        "Jour 1 : ouvrir seulement de quelques centimètres.",
+        "Jour 2 : attendre une seconde.",
+        "Jour 3 : ouvrir un peu plus largement.",
+        "Jour 4 : sortir seulement après le mot “ok”.",
+        "Jour 5 : répéter sur une vraie sortie."
+      ],
+      steps: [
+        "Mets la laisse à ton chien.",
+        "Demande un petit calme ou un assis.",
+        "Ouvre la porte très légèrement.",
+        "S’il avance, referme doucement.",
+        "S’il attend, dis “ok” et avance avec lui."
+      ],
+      success: [
+        "Ton chien ne bondit plus immédiatement.",
+        "Il regarde davantage vers toi.",
+        "Il attend ton signal.",
+        "La sortie démarre plus calmement.",
+        "Tu te sens plus en sécurité."
+      ],
+      mistakes: [
+        "Ouvrir grand la porte trop vite.",
+        "Tirer brusquement sur la laisse.",
+        "Demander 30 secondes d’attente dès le départ.",
+        "Sortir pendant qu’il force le passage.",
+        "Oublier le mot de libération."
+      ],
+      troubleshooting: [
+        "S’il fonce, réduis l’ouverture de la porte.",
+        "S’il aboie, attends une micro-pause de calme.",
+        "S’il ne tient pas l’assis, demande seulement les pattes au sol.",
+        "S’il est trop excité, fais l’exercice après une sortie plus calme.",
+        "S’il recule ou stress, simplifie avec une porte intérieure."
+      ],
+      homework: "Travaille une seule sortie par jour en mode calme pendant une semaine."
+    },
+    {
+      id: "free-08",
+      free: true,
+      category: "Bases essentielles",
+      title: "Le panier comme zone positive",
+      level: "Débutant",
+      duration: "8 min",
+      goal: "Faire du panier un endroit agréable et rassurant.",
+      intro: "Le panier ne doit pas être associé à une punition. Pour qu’un chien y aille volontiers, il doit y trouver du confort, du calme et parfois de petites surprises.",
+      why: "Un panier positif aide ton bouledogue à se poser, à mieux gérer l’excitation et à avoir un endroit à lui. C’est utile quand tu travailles, quand tu reçois ou quand il a besoin de repos.",
+      before: [
+        "Place le panier dans un endroit calme mais pas isolé.",
+        "Ajoute une couverture confortable.",
+        "Prépare quelques friandises.",
+        "Ne force pas ton chien à y rester.",
+        "N’utilise jamais le panier comme punition."
+      ],
+      progress: [
+        "Étape 1 : déposer des friandises dans le panier.",
+        "Étape 2 : féliciter quand il y va spontanément.",
+        "Étape 3 : ajouter le mot “panier”.",
+        "Étape 4 : récompenser quelques secondes de calme.",
+        "Étape 5 : utiliser le panier dans la vie quotidienne."
+      ],
+      steps: [
+        "Dépose une friandise dans le panier.",
+        "Laisse ton chien y aller librement.",
+        "Félicite calmement quand il entre dedans.",
+        "Ajoute le mot “panier” au bon moment.",
+        "Laisse-le ressortir au début sans le bloquer."
+      ],
+      success: [
+        "Ton chien va plus souvent au panier seul.",
+        "Il y reste quelques instants calmement.",
+        "Il ne voit pas le panier comme une contrainte.",
+        "Il accepte d’y aller quand tu le demandes.",
+        "Il s’y repose plus facilement."
+      ],
+      mistakes: [
+        "Envoyer le chien au panier pour le punir.",
+        "Le forcer à rester trop longtemps.",
+        "Placer le panier dans un lieu bruyant.",
+        "Crier “panier” quand il est déjà excité.",
+        "Ne jamais récompenser quand il y va seul."
+      ],
+      troubleshooting: [
+        "S’il évite le panier, change son emplacement.",
+        "S’il ressort immédiatement, récompense juste l’entrée au début.",
+        "S’il gratte ou mordille, propose un objet calme.",
+        "S’il refuse d’y aller, rends l’endroit plus confortable.",
+        "S’il s’excite, travaille après une promenade."
+      ],
+      homework: "Dépose 3 petites surprises par jour dans son panier pendant une semaine."
+    },
+    {
+      id: "free-09",
+      free: true,
+      category: "Bases essentielles",
+      title: "Comprendre les signes de fatigue",
+      level: "Tous niveaux",
+      duration: "5 min",
+      goal: "Savoir quand arrêter une séance avant que ton chien sature.",
+      intro: "Un bouledogue fatigué peut donner l’impression d’être têtu alors qu’il n’est simplement plus disponible. Savoir lire les signes de fatigue évite beaucoup d’erreurs.",
+      why: "Respecter la fatigue de ton chien protège sa motivation et sa santé. Chez le bouledogue français, il faut aussi être attentif à la chaleur, à la respiration et à l’effort.",
+      before: [
+        "Observe ton chien avant de commencer.",
+        "Évite les heures chaudes.",
+        "Prévois de l’eau.",
+        "Travaille sur des séances courtes.",
+        "Arrête au premier vrai signe de saturation."
+      ],
+      progress: [
+        "Étape 1 : repérer les signes de fatigue dans la maison.",
+        "Étape 2 : noter à quel moment ils apparaissent.",
+        "Étape 3 : raccourcir les séances.",
+        "Étape 4 : faire plus de pauses.",
+        "Étape 5 : adapter les exercices selon la météo et l’énergie."
+      ],
+      steps: [
+        "Observe sa respiration.",
+        "Regarde s’il détourne la tête ou renifle partout.",
+        "Note s’il prend les friandises plus lentement.",
+        "Fais une pause eau et calme.",
+        "Reprends plus tard avec un exercice plus facile."
+      ],
+      success: [
+        "Tu arrêtes avant que ton chien décroche complètement.",
+        "Les séances restent positives.",
+        "Ton chien récupère plus vite.",
+        "Tu distingues mieux fatigue et désobéissance.",
+        "Il garde plus de motivation sur la durée."
+      ],
+      mistakes: [
+        "Penser qu’il est têtu alors qu’il est fatigué.",
+        "Travailler en pleine chaleur.",
+        "Vouloir finir l’exercice à tout prix.",
+        "Ignorer une respiration forte.",
+        "Faire des séances trop physiques."
+      ],
+      troubleshooting: [
+        "S’il halète beaucoup, stoppe immédiatement et mets-le au frais.",
+        "S’il refuse les friandises, fais une pause.",
+        "S’il s’éloigne, raccourcis les séances futures.",
+        "S’il s’excite au lieu d’écouter, propose du calme.",
+        "S’il fatigue très vite, demande conseil à un vétérinaire."
+      ],
+      homework: "Lors des prochaines séances, note le moment où ton chien commence à décrocher."
+    },
+    {
+      id: "free-10",
+      free: true,
+      category: "Bases essentielles",
+      title: "Choisir les bonnes récompenses",
+      level: "Débutant",
+      duration: "6 min",
+      goal: "Trouver ce qui motive vraiment ton bouledogue selon la situation.",
+      intro: "Tous les chiens ne sont pas motivés par les mêmes choses. Certains adorent la nourriture, d’autres préfèrent le jeu, la voix ou l’accès à une odeur intéressante.",
+      why: "Une récompense adaptée rend l’apprentissage plus rapide et plus agréable. Dehors, une simple croquette peut ne pas suffire si ton chien est attiré par les odeurs, les chiens ou les passants.",
+      before: [
+        "Prépare trois types de récompenses différentes.",
+        "Teste dans un endroit calme.",
+        "Utilise de très petits morceaux.",
+        "Garde les meilleures récompenses pour les exercices difficiles.",
+        "Observe ce que ton chien choisit spontanément."
+      ],
+      progress: [
+        "Étape 1 : tester les récompenses à la maison.",
+        "Étape 2 : classer les récompenses de faible à forte valeur.",
+        "Étape 3 : utiliser les plus fortes dehors.",
+        "Étape 4 : varier pour éviter la lassitude.",
+        "Étape 5 : remplacer parfois la nourriture par un jeu ou une liberté."
+      ],
+      steps: [
+        "Présente trois récompenses différentes.",
+        "Observe celle que ton chien choisit en premier.",
+        "Teste ensuite pendant un exercice simple.",
+        "Garde la meilleure pour le rappel ou les distractions.",
+        "Varie régulièrement selon l’environnement."
+      ],
+      success: [
+        "Ton chien reste plus concentré.",
+        "Il répond mieux dehors.",
+        "Il revient plus vite au rappel.",
+        "Il montre plus d’enthousiasme pendant les séances.",
+        "Tu sais quelle récompense utiliser selon la difficulté."
+      ],
+      mistakes: [
+        "Utiliser une récompense trop faible dehors.",
+        "Donner de gros morceaux.",
+        "Penser qu’une caresse suffit toujours.",
+        "Utiliser la même friandise pendant des semaines.",
+        "Récompenser sans lien avec un comportement précis."
+      ],
+      troubleshooting: [
+        "S’il ignore la friandise, teste plus appétent.",
+        "S’il s’excite trop, choisis une récompense plus calme.",
+        "S’il prend puis repart, travaille dans un lieu moins stimulant.",
+        "S’il grossit facilement, réduis la taille des morceaux.",
+        "S’il n’aime pas la nourriture dehors, utilise l’accès aux odeurs comme récompense."
+      ],
+      homework: "Fais un mini-test avec 3 récompenses différentes et classe-les de la moins motivante à la plus motivante."
+    },
 
   ...[
     [
-      'premium-01',
-      'Promenade sans tirer',
-      'Comprendre pourquoi il tire en laisse',
-      'Intermédiaire',
-      '10 min',
-      'Identifier la vraie cause du tirage pour choisir la bonne stratégie.',
-      'Un bouledogue ne tire pas pour dominer. Il tire souvent parce qu’il est excité, stressé, attiré par les odeurs ou parce qu’il a appris que tirer fait avancer.',
-      [
-        'Observe quand il tire : début de balade, odeurs, chiens, humains ou retour maison.',
-        'Note si la laisse est tendue tout le temps ou seulement par pics.',
-        'Ralentis avant les zones difficiles.',
-        'Récompense chaque moment où la laisse se détend.',
-        'Choisis un seul objectif pour la semaine.',
-      ],
-      [
-        'Penser qu’un harnais règle tout seul le problème.',
-        'Tirer plus fort que lui.',
-        'Changer de méthode tous les jours.',
-      ],
-      'Pendant 3 balades, note les 3 moments où la laisse se tend le plus.',
-    ],
-    [
-      'premium-02',
-      'Promenade sans tirer',
-      'Récompenser la laisse détendue',
-      'Intermédiaire',
-      '10 min',
-      'Lui apprendre que marcher avec une laisse souple permet d’avancer.',
-      'Avant de corriger le tirage, il faut montrer au chien quel comportement rapporte quelque chose.',
-      [
-        'Commence dans une rue calme.',
-        'Dès que la laisse forme un léger U, dis “oui”.',
-        'Récompense près de ta jambe.',
-        'Si la laisse se tend, arrête-toi.',
-        'Repars quand elle se détend.',
-      ],
-      [
-        'Attendre une marche parfaite pour récompenser.',
-        'Donner la friandise trop loin de toi.',
-        'Continuer à avancer quand il tire fort.',
-      ],
-      'Fais 5 minutes de laisse détendue avant chaque vraie balade.',
-    ],
-    [
-      'premium-03',
-      'Promenade sans tirer',
-      'Gérer les odeurs obsessionnelles',
-      'Intermédiaire',
-      '12 min',
-      'Lui permettre de renifler sans transformer chaque poteau en bras de fer.',
-      'Renifler est un besoin naturel. On ne l’interdit pas, on met un cadre clair entre exploration et marche.',
-      [
-        'Choisis un mot d’autorisation : “va renifler”.',
-        'Choisis un mot de départ : “on y va”.',
-        'Récompense dès qu’il quitte une odeur pour te suivre.',
-        'Alternez pauses odeurs et quelques pas de marche.',
-        'Augmente progressivement les départs d’odeur réussis.',
-      ],
-      [
-        'Interdire toutes les odeurs.',
-        'Tirer sèchement sur la laisse.',
-        'Ne pas récompenser quand il accepte de repartir.',
-      ],
-      'Sur une balade, autorise 5 zones de reniflage puis demande de repartir.',
-    ],
-    [
-      'premium-04',
-      'Promenade sans tirer',
-      'Croiser un chien calmement',
-      'Avancé',
-      '12 min',
-      'Réduire l’excitation ou la tension lors des croisements avec d’autres chiens.',
-      'Le croisement est difficile parce qu’il mélange émotion, distance et frustration. On travaille avant l’explosion.',
-      [
-        'Repère l’autre chien avant que ton boubou fixe trop.',
-        'Augmente la distance si nécessaire.',
-        'Dis son prénom et récompense le regard vers toi.',
-        'Avance en arc de cercle plutôt qu’en face-à-face.',
-        'Récompense après le croisement quand il redescend.',
-      ],
-      [
-        'Attendre qu’il aboie pour réagir.',
-        'Forcer un face-à-face en laisse courte.',
-        'Le gronder alors qu’il est déjà débordé.',
-      ],
-      'Travaille uniquement à distance confortable pendant une semaine.',
-    ],
-    [
-      'premium-05',
-      'Promenade sans tirer',
-      'Le demi-tour magique',
-      'Intermédiaire',
-      '8 min',
-      'Utiliser le changement de direction pour récupérer l’attention sans tirer.',
-      'Le demi-tour apprend au chien à rester connecté à toi, car la balade devient moins automatique.',
-      [
-        'Avance lentement dans un endroit calme.',
-        'Dis “demi-tour” avec une voix joyeuse.',
-        'Tourne en invitant ton chien avec ton corps.',
-        'Récompense dès qu’il revient vers toi.',
-        'Utilise-le ensuite avant les déclencheurs.',
-      ],
-      [
-        'Faire demi-tour brutalement.',
-        'L’utiliser seulement quand il tire déjà très fort.',
-        'Oublier de récompenser le retour vers toi.',
-      ],
-      'Fais 10 demi-tours joyeux pendant une balade calme.',
-    ],
-    [
-      'premium-06',
-      'Rester seul',
-      'Préparer les faux départs',
-      'Intermédiaire',
-      '10 min',
-      'Désensibiliser ton chien aux signes de départ comme les clés, le manteau ou les chaussures.',
-      'Certains chiens stressent avant même que tu partes. Ils ont appris que certains gestes annoncent l’absence.',
-      [
-        'Prends tes clés puis repose-les sans sortir.',
-        'Mets ton manteau puis enlève-le.',
-        'Ouvre la porte puis reste à l’intérieur.',
-        'Reste neutre, sans grand au revoir.',
-        'Répète plusieurs petites scènes dans la journée.',
-      ],
-      [
-        'Faire un faux départ trop long dès le début.',
-        'Rassurer avec une voix inquiète.',
-        'Partir vraiment quand il est déjà paniqué.',
-      ],
-      'Fais 5 faux départs très courts par jour pendant 5 jours.',
-    ],
-    [
-      'premium-07',
-      'Rester seul',
-      'Créer une zone rassurante',
-      'Intermédiaire',
-      '12 min',
-      'Préparer un espace où ton chien peut se poser pendant tes absences.',
-      'La zone de solitude doit annoncer confort et sécurité, pas abandon ou punition.',
-      [
-        'Choisis un coin sécurisé avec panier et eau.',
-        'Ajoute une odeur familière et une occupation calme.',
-        'Fais-le y aller quand tu es présent.',
-        'Ferme quelques secondes puis rouvre avant l’inquiétude.',
-        'Augmente très progressivement.',
-      ],
-      [
-        'Utiliser cette zone uniquement quand tu pars.',
-        'Y envoyer le chien après une bêtise.',
-        'Choisir un lieu trop isolé.',
-      ],
-      'Propose une occupation dans sa zone 10 minutes par jour pendant une semaine.',
-    ],
-    [
-      'premium-08',
-      'Rester seul',
-      'Augmenter l’absence progressivement',
-      'Avancé',
-      '15 min',
-      'Allonger les absences sans dépasser le seuil de stress de ton chien.',
-      'Si ton chien panique à 2 minutes, partir 30 minutes ne l’entraîne pas. Cela confirme son stress.',
-      [
-        'Commence par 5 à 10 secondes derrière la porte.',
-        'Reviens avant les pleurs ou l’agitation.',
-        'Augmente par petits paliers.',
-        'Si le stress revient, redescends au palier précédent.',
-        'Garde les départs et retours neutres.',
-      ],
-      [
-        'Monter trop vite en durée.',
-        'Rentrer uniquement quand il aboie fort.',
-        'Faire des adieux très émotionnels.',
-      ],
-      'Crée une échelle d’absence de 10 secondes à 5 minutes.',
-    ],
-    [
-      'premium-09',
-      'Rester seul',
-      'Gérer les retours à la maison',
-      'Intermédiaire',
-      '8 min',
-      'Éviter de renforcer une excitation excessive à ton retour.',
-      'Le retour peut devenir explosif. Il faut garder l’émotion positive tout en apprenant la redescente.',
-      [
-        'Entre calmement.',
-        'Pose tes affaires sans crier son prénom.',
-        'Attends quelques secondes de calme avant de le saluer.',
-        'Salue-le quand ses quatre pattes sont au sol.',
-        'Ignore les sauts sans repousser brutalement.',
-      ],
-      [
-        'Créer une fête énorme à chaque retour.',
-        'Gronder les sauts tout en donnant de l’attention.',
-        'Ignorer le chien alors qu’il est enfin calme.',
-      ],
-      'Pendant une semaine, fais des retours calmes même après une absence courte.',
-    ],
-    [
-      'premium-10',
-      'Rester seul',
-      'Occupation intelligente pendant l’absence',
-      'Tous niveaux',
-      '10 min',
-      'Utiliser les occupations pour aider ton chien à se poser, sans cacher un vrai stress.',
-      'Un jouet d’occupation peut aider, mais il ne remplace pas un vrai apprentissage progressif de la solitude.',
-      [
-        'Teste l’occupation quand tu es présent.',
-        'Vérifie qu’il ne détruit pas l’objet.',
-        'Réserve certaines occupations aux moments calmes.',
-        'Retire l’objet s’il monte trop en excitation.',
-        'Observe s’il se pose vraiment après.',
-      ],
-      [
-        'Donner un objet dangereux sans test.',
-        'Penser qu’un jouet suffit en cas de panique.',
-        'Laisser uniquement des objets très excitants.',
-      ],
-      'Teste deux occupations différentes et note laquelle l’apaise le plus.',
+      // 10 premières leçons premium enrichies — à coller dans baseLessons
+
+{
+  id: "premium-01",
+  free: false,
+  category: "Rappel avancé",
+  title: "Le rappel malgré les distractions",
+  level: "Intermédiaire",
+  duration: "12 min",
+  goal: "Obtenir un meilleur rappel même lorsque l’environnement devient intéressant.",
+  intro: "Dehors, ton bouledogue doit lutter contre énormément de distractions : odeurs, chiens, humains, bruits… Cette leçon apprend à renforcer progressivement le rappel dans des situations réelles.",
+  why: "Un rappel fiable augmente la sécurité et permet davantage de liberté. L’objectif n’est pas la perfection immédiate, mais d’apprendre au chien que revenir vers toi est toujours intéressant.",
+  before: [
+  "Prévoir une longe de 5 à 10 mètres.",
+  "Choisir un endroit semi-calme au départ.",
+  "Préparer des récompenses très fortes.",
+  "Ne pas travailler sur un chien épuisé.",
+  "Éviter les lieux trop difficiles dès le début."
+  ],
+  progress: [
+  "Commencer avec peu de distractions.",
+  "Ajouter progressivement du mouvement autour.",
+  "Travailler à différentes distances.",
+  "Tester avec d’autres chiens visibles au loin.",
+  "Récompenser fortement chaque vrai effort."
+  ],
+  steps: [
+  "Laisse ton chien explorer en longe.",
+  "Appelle-le une seule fois avec énergie.",
+  "Recule légèrement pour créer du mouvement.",
+  "Récompense très généreusement le retour.",
+  "Laisse-le repartir ensuite pour éviter la frustration."
+  ],
+  success: [
+  "Le chien revient plus vite.",
+  "Il hésite moins malgré les distractions.",
+  "Il garde plus d’attention dehors.",
+  "Les rappels deviennent plus fluides.",
+  "Il revient même sans voir immédiatement la friandise."
+  ],
+  mistakes: [
+  "Tester sans longe trop tôt.",
+  "Punir après le retour.",
+  "Répéter le rappel sans arrêt.",
+  "Faire uniquement des rappels de fin de promenade.",
+  "Travailler dans un lieu trop difficile dès le début."
+  ],
+  troubleshooting: [
+  "S’il ignore le rappel, augmente la valeur des récompenses.",
+  "S’il revient lentement, récompense quand même l’effort.",
+  "S’il part vers un chien, augmente la distance.",
+  "S’il décroche vite, réduis la durée de la séance.",
+  "S’il réussit difficilement, reviens à un niveau plus simple."
+  ],
+  homework: "Faire 5 rappels réussis avec longe dans un lieu légèrement distrayant."
+  },
+  
+  {
+  id: "premium-02",
+  free: false,
+  category: "Gestion émotionnelle",
+  title: "Apprendre à gérer l’excitation",
+  level: "Intermédiaire",
+  duration: "10 min",
+  goal: "Aider ton bouledogue à redescendre plus vite lorsqu’il s’excite.",
+  intro: "Les bouledogues français montent parfois très vite en excitation : visiteurs, jouets, promenade, nourriture… Cette leçon aide à construire davantage de calme.",
+  why: "Un chien trop excité écoute moins bien, saute davantage et fatigue plus vite. Travailler le retour au calme améliore énormément le quotidien.",
+  before: [
+  "Prévoir un endroit calme.",
+  "Choisir un moment où le chien n’est pas déjà surexcité.",
+  "Préparer quelques récompenses calmes.",
+  "Garder une voix posée.",
+  "Éviter les gestes brusques."
+  ],
+  progress: [
+  "Récompenser les micro-moments de calme.",
+  "Faire des pauses pendant les jeux.",
+  "Ajouter progressivement des distractions.",
+  "Utiliser le panier comme zone de récupération.",
+  "Créer des routines calmes après l’activité."
+  ],
+  steps: [
+  "Observe le moment où l’excitation commence à monter.",
+  "Réduis ton énergie immédiatement.",
+  "Demande un comportement simple comme un regard.",
+  "Récompense les secondes de calme.",
+  "Fais une pause avant de reprendre l’activité."
+  ],
+  success: [
+  "Le chien redescend plus vite.",
+  "Il saute moins.",
+  "Il récupère plus rapidement après le jeu.",
+  "Les transitions deviennent plus fluides.",
+  "Il garde davantage son attention."
+  ],
+  mistakes: [
+  "Exciter le chien en permanence.",
+  "Crier pour obtenir du calme.",
+  "Punir l’excitation.",
+  "Faire des jeux trop longs.",
+  "Ne jamais récompenser les comportements calmes."
+  ],
+  troubleshooting: [
+  "S’il reste trop excité, raccourcis les séances de jeu.",
+  "S’il aboie, attends une micro-pause de silence.",
+  "S’il saute beaucoup, ignore puis redirige calmement.",
+  "S’il fatigue vite, ajoute plus de repos.",
+  "S’il s’emballe dehors, augmente la distance des stimulations."
+  ],
+  homework: "Récompenser au moins 10 moments de calme spontané dans la journée."
+  },
+  
+  {
+  id: "premium-03",
+  free: false,
+  category: "Solitude",
+  title: "Prévenir l’anxiété de séparation",
+  level: "Intermédiaire",
+  duration: "15 min",
+  goal: "Apprendre au chien à rester seul progressivement et sans stress.",
+  intro: "Certains bouledogues supportent très mal les absences. Plus l’apprentissage est progressif, plus le chien peut construire de vraies habitudes de solitude sereine.",
+  why: "L’anxiété de séparation peut provoquer aboiements, destructions, malpropreté et stress important. Travailler tôt permet souvent d’éviter que le problème s’installe.",
+  before: [
+  "Sortir le chien avant l’exercice.",
+  "Préparer un environnement calme.",
+  "Ne pas faire de grands au revoir.",
+  "Retirer les objets dangereux.",
+  "Commencer par des absences très courtes."
+  ],
+  progress: [
+  "Quelques secondes d’absence.",
+  "Puis 1 minute.",
+  "Puis quelques minutes.",
+  "Varier les horaires.",
+  "Ajouter progressivement des départs réels."
+  ],
+  steps: [
+  "Donne une occupation calme.",
+  "Quitte la pièce quelques secondes.",
+  "Reviens calmement sans excitation.",
+  "Répète plusieurs fois.",
+  "Augmente progressivement la durée."
+  ],
+  success: [
+  "Le chien reste détendu.",
+  "Il ne colle plus constamment.",
+  "Les destructions diminuent.",
+  "Les départs deviennent plus simples.",
+  "Il récupère rapidement après une absence."
+  ],
+  mistakes: [
+  "Partir trop longtemps trop vite.",
+  "Faire des départs émotionnels.",
+  "Punir après une destruction.",
+  "Laisser un chien stressé pendant des heures.",
+  "Brûler les étapes."
+  ],
+  troubleshooting: [
+  "S’il panique vite, réduis fortement la durée.",
+  "S’il aboie, reviens à des absences plus faciles.",
+  "S’il détruit, augmente les dépenses mentales.",
+  "S’il te suit partout, travaille l’autonomie à la maison.",
+  "S’il reste très anxieux, demande l’aide d’un professionnel."
+  ],
+  homework: "Faire 5 mini absences réussies par jour pendant une semaine."
+  },
+  
+  {
+  id: "premium-04",
+  free: false,
+  category: "Marche en laisse",
+  title: "Marcher en ville sans tirer",
+  level: "Intermédiaire",
+  duration: "12 min",
+  goal: "Améliorer la marche dans des environnements stimulants.",
+  intro: "La ville est difficile pour beaucoup de chiens : odeurs, passants, voitures, bruit… Cette leçon apprend à garder davantage de connexion pendant les promenades.",
+  why: "Une promenade plus calme réduit le stress du chien et celui de l’humain. Cela améliore aussi la sécurité dans les environnements urbains.",
+  before: [
+  "Utiliser un harnais confortable.",
+  "Prévoir des récompenses fortes.",
+  "Choisir un moment peu fréquenté au départ.",
+  "Garder des séances courtes.",
+  "Éviter les heures trop chaudes."
+  ],
+  progress: [
+  "Commencer dans une rue calme.",
+  "Ajouter progressivement du passage.",
+  "Travailler sur de petites distances.",
+  "Faire des pauses régulières.",
+  "Récompenser les retours d’attention."
+  ],
+  steps: [
+  "Commence la promenade dans le calme.",
+  "Récompense dès que la laisse se détend.",
+  "Change doucement de direction si le chien tire.",
+  "Fais des pauses reniflage.",
+  "Termine avant saturation."
+  ],
+  success: [
+  "Le chien tire moins longtemps.",
+  "Il revient plus souvent vers toi.",
+  "La promenade devient plus agréable.",
+  "Les transitions sont plus fluides.",
+  "Le chien récupère plus vite après une distraction."
+  ],
+  mistakes: [
+  "Tirer en retour.",
+  "Faire des promenades trop longues.",
+  "Vouloir une marche militaire.",
+  "Être incohérent.",
+  "Punir le chien dans un environnement déjà stressant."
+  ],
+  troubleshooting: [
+  "S’il tire beaucoup, réduis les distractions.",
+  "S’il s’excite vite, fais plus de pauses.",
+  "S’il décroche complètement, raccourcis la promenade.",
+  "S’il halète beaucoup, mets-le au frais.",
+  "S’il bloque, laisse-le observer avant de repartir."
+  ],
+  homework: "Faire 10 minutes de marche éducative dans une rue calme 3 fois cette semaine."
+  },
+  
+  {
+  id: "premium-05",
+  free: false,
+  category: "Gestion des invités",
+  title: "Rester calme quand quelqu’un arrive",
+  level: "Intermédiaire",
+  duration: "10 min",
+  goal: "Réduire les sauts et l’excitation à l’arrivée des visiteurs.",
+  intro: "Les invités déclenchent souvent beaucoup d’excitation chez les bouledogues français. L’objectif n’est pas d’obtenir un chien parfait, mais davantage de contrôle et de calme.",
+  why: "Un accueil plus calme évite les sauts, les aboiements et le stress. Cela rend aussi les visites plus agréables pour tout le monde.",
+  before: [
+  "Prévoir une laisse au début si nécessaire.",
+  "Demander aux invités d’ignorer le chien au départ.",
+  "Préparer quelques récompenses.",
+  "Créer un espace calme.",
+  "Commencer avec une personne connue du chien."
+  ],
+  progress: [
+  "Récompenser les 4 pattes au sol.",
+  "Travailler avec une seule personne.",
+  "Ajouter progressivement plus de mouvement.",
+  "Faire des pauses panier.",
+  "Tester avec de vrais invités."
+  ],
+  steps: [
+  "Fais entrer calmement la personne.",
+  "Ignore les sauts.",
+  "Récompense immédiatement les moments de calme.",
+  "Redirige vers le panier si besoin.",
+  "Répète sur de courtes durées."
+  ],
+  success: [
+  "Le chien saute moins.",
+  "Il récupère plus vite.",
+  "Les visiteurs peuvent entrer plus sereinement.",
+  "Le chien écoute davantage.",
+  "L’ambiance générale devient plus calme."
+  ],
+  mistakes: [
+  "Crier pendant l’excitation.",
+  "Punir physiquement.",
+  "Laisser les invités surexciter le chien.",
+  "Faire durer l’exercice trop longtemps.",
+  "Récompenser involontairement les sauts."
+  ],
+  troubleshooting: [
+  "S’il saute beaucoup, augmente la distance.",
+  "S’il aboie, travaille avec moins de stimulation.",
+  "S’il devient incontrôlable, fais une pause calme.",
+  "S’il fatigue vite, réduis la durée.",
+  "S’il réussit difficilement, reviens à une personne calme."
+  ],
+  homework: "Travailler 5 minutes avec un proche calme cette semaine."
+  }
+  
     ],
     [
       'premium-11',

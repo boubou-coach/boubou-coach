@@ -3514,11 +3514,10 @@ useEffect(() => {
           Installer l’application
         </button>
       )}
-    </div>
-              <h1 className="text-xl font-black tracking-tight lg:text-3xl">
-                Dressage bouledogue français
-              </h1>
-            </div>
+    <h1 className="text-xl font-black tracking-tight lg:text-3xl">
+  Dressage bouledogue français
+</h1>
+</div>
 
             <div className="grid h-11 w-11 place-items-center rounded-2xl bg-[#101827] text-white">
               <Dog />

@@ -1584,6 +1584,7 @@ useEffect(() => {
     { id: "programs", label: "Programmes", icon: Flame },
     { id: "profile", label: "Mon boubou", icon: PawPrint },
     { id: "premium", label: "Premium", icon: Crown },
+    { id: "legal", label: "Infos", icon: ShieldCheck },
   ];
 
   return (
@@ -1721,6 +1722,114 @@ useEffect(() => {
                 premiumLessons={premiumLessons}
               />
             )}
+
+{tab === 'legal' && (
+  <div className="p-5 lg:p-8">
+    <div className="rounded-3xl bg-white p-6 shadow-sm">
+      <h1 className="text-3xl font-black">
+        Mentions légales & Confidentialité
+      </h1>
+
+      <div className="prose prose-sm mt-6 max-w-none">
+      # Mentions légales – Boubou Coach
+
+## Éditeur de l’application
+
+Boubou Coach est une application éditée par :
+
+Mathilde Aimard
+France
+Email de contact : [contact@bouledogue4ever.fr](mailto:contact@bouledogue4ever.fr)
+
+## Hébergement
+
+L’application est hébergée par :
+
+Vercel Inc.
+340 S Lemon Ave #4133
+Walnut, CA 91789
+États-Unis
+https://vercel.com
+
+## Propriété intellectuelle
+
+L’ensemble des contenus présents dans l’application Boubou Coach (textes, visuels, logos, éléments graphiques, programmes, fiches et illustrations) est protégé par le droit d’auteur.
+
+Toute reproduction, diffusion ou exploitation sans autorisation préalable est interdite.
+
+# Conditions Générales d’Utilisation (CGU)
+
+## Objet
+
+L’application Boubou Coach propose des contenus éducatifs et informatifs autour du dressage et du quotidien du bouledogue français.
+
+## Utilisation
+
+L’utilisateur s’engage à utiliser l’application dans le respect des lois en vigueur et à ne pas détourner les fonctionnalités proposées.
+
+## Abonnement Premium
+
+Certaines fonctionnalités et contenus sont accessibles via un abonnement premium payant.
+
+Les paiements sont traités via Stripe.
+
+L’abonnement peut être interrompu à tout moment par l’utilisateur depuis la plateforme de paiement utilisée.
+
+## Limitation de responsabilité
+
+Les contenus proposés dans l’application sont fournis à titre informatif et éducatif.
+
+Ils ne remplacent pas l’accompagnement personnalisé d’un éducateur canin professionnel ou d’un vétérinaire.
+
+Chaque chien étant unique, les résultats peuvent varier selon son âge, son caractère, son environnement et son état de santé.
+
+L’éditeur de l’application ne pourra être tenu responsable d’éventuels dommages résultant de l’utilisation des contenus proposés.
+
+# Politique de confidentialité
+
+## Données collectées
+
+L’application peut collecter certaines données nécessaires à son fonctionnement :
+
+* prénom du chien
+* progression des leçons
+* préférences utilisateur
+* informations techniques liées à l’utilisation de l’application
+
+## Paiement
+
+Les paiements sont sécurisés et traités par Stripe.
+
+Les informations bancaires ne sont jamais stockées par Boubou Coach.
+
+## Cookies et stockage local
+
+L’application utilise le stockage local du navigateur afin de sauvegarder certaines préférences et données de progression.
+
+## Conservation des données
+
+Les données sont conservées uniquement le temps nécessaire au bon fonctionnement des services proposés.
+
+## Droits des utilisateurs
+
+Conformément au RGPD, chaque utilisateur peut demander :
+
+* l’accès à ses données
+* leur modification
+* leur suppression
+
+Pour toute demande :
+[contact@bouledogue4ever.fr](mailto:contact@bouledogue4ever.fr)
+
+# Contact
+
+Pour toute question concernant l’application :
+
+[contact@bouledogue4ever.fr](mailto:contact@bouledogue4ever.fr)
+      </div>
+    </div>
+  </div>
+)}
           </section>
 
           <nav className="fixed bottom-0 left-0 right-0 z-30 border-t border-black/5 bg-white/95 px-3 py-2 backdrop-blur lg:hidden">

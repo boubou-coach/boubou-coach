@@ -3282,32 +3282,7 @@ const baseLessons: Lesson[] = [
         ],
         homework: "Choisis un seul aboiement à travailler et note le nombre de fois par jour."
       },
-  ].map(
-    ([
-      id,
-      category,
-      title,
-      level,
-      duration,
-      goal,
-      intro,
-      steps,
-      mistakes,
-      homework,
-    ]) => ({
-      id: id as string,
-      category: category as string,
-      title: title as string,
-      level: level as string,
-      duration: duration as string,
-      goal: goal as string,
-      intro: intro as string,
-      steps: steps as string[],
-      mistakes: mistakes as string[],
-      homework: homework as string,
-    })
-  ),
-];
+    ];
 
 const enrichLesson = (lesson: Lesson): Lesson => ({
   ...lesson,

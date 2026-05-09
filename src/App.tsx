@@ -4292,18 +4292,26 @@ function ProfileScreen({
   <span className="text-sm font-black">Photo du chien</span>
 
   <input
-    type="file"
-    accept="image/*"
-    onChange={(e) => {
-      const file = e.target.files?.[0];
+  type="file"
+  accept="image/*"
+  onChange={(e) => {
+    const file = e.target.files?.[0];
 
-      if (file) {
-        const imageUrl = URL.createObjectURL(file);
-        setDogPhoto(imageUrl);
-      }
-    }}
-    className="mt-2 block w-full text-sm"
-  />
+    if (file) {
+      const reader = new FileReader();
+
+      reader.onloadend = () => {
+        const image = reader.result as string;
+
+        setDogPhoto(image);
+        localStorage.setItem("boubou-dog-photo", image);
+      };
+
+      reader.readAsDataURL(file);
+    }
+  }}
+  className="mt-2 block w-full text-sm"
+/>
 </label>
 
   <label>

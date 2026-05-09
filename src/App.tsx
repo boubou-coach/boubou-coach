@@ -3482,32 +3482,39 @@ useEffect(() => {
         </aside>
 
         <main className="main-content flex min-h-screen flex-1 flex-col lg:min-h-0">
-          <header className="sticky top-0 z-20 flex items-center justify-between border-b border-black/5 bg-[#fbf8f2]/90 px-5 py-4 backdrop-blur lg:px-8">
-            <button
-              onClick={() => setMenuOpen(true)}
-              className="rounded-2xl bg-white p-3 shadow-sm lg:hidden"
-            >
-              <Menu />
-            </button>
+  <header className="sticky top-0 z-20 flex items-center justify-between border-b border-black/5 bg-[#fbf8f2]/90 px-5 py-4 backdrop-blur lg:px-8">
 
-            <div>
-              <p className="text-xs font-black uppercase tracking-[0.25em] text-amber-700">
-                Boubou Coach
-              </p>
-              <button
-  onClick={async () => {
-    if (deferredPrompt) {
-      deferredPrompt.prompt();
-      await deferredPrompt.userChoice;
-      setDeferredPrompt(null);
-    } else {
-      alert("Sur mobile : ouvre le menu du navigateur puis choisis Ajouter à l’écran d’accueil.");
-    }
-  }}
-  className="mt-4 rounded-2xl bg-[#101827] px-5 py-3 text-sm font-black text-white"
->
-  Installer l’application
-</button>
+    <button
+      onClick={() => setMenuOpen(true)}
+      className="rounded-2xl bg-white p-3 shadow-sm lg:hidden"
+    >
+      <Menu />
+    </button>
+
+    <div>
+      <p className="text-xs font-black uppercase tracking-[0.25em] text-amber-700">
+        Boubou Coach
+      </p>
+
+      {!window.matchMedia("(display-mode: standalone)").matches && (
+        <button
+          onClick={async () => {
+            if (deferredPrompt) {
+              deferredPrompt.prompt();
+              await deferredPrompt.userChoice;
+              setDeferredPrompt(null);
+            } else {
+              alert(
+                "Sur mobile : ouvre le menu du navigateur puis choisis Ajouter à l’écran d’accueil."
+              );
+            }
+          }}
+          className="mt-4 rounded-2xl bg-[#101827] px-5 py-3 text-sm font-black text-white"
+        >
+          Installer l’application
+        </button>
+      )}
+    </div>
               <h1 className="text-xl font-black tracking-tight lg:text-3xl">
                 Dressage bouledogue français
               </h1>

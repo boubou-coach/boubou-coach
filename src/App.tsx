@@ -589,246 +589,536 @@ const baseLessons: Lesson[] = [
 
   ...[
     [
-      'premium-01',
-      'Promenade sans tirer',
-      'Comprendre pourquoi il tire en laisse',
-      'Intermédiaire',
-      '10 min',
-      'Identifier la vraie cause du tirage pour choisir la bonne stratégie.',
-      'Un bouledogue ne tire pas pour dominer. Il tire souvent parce qu’il est excité, stressé, attiré par les odeurs ou parce qu’il a appris que tirer fait avancer.',
-      [
-        'Observe quand il tire : début de balade, odeurs, chiens, humains ou retour maison.',
-        'Note si la laisse est tendue tout le temps ou seulement par pics.',
-        'Ralentis avant les zones difficiles.',
-        'Récompense chaque moment où la laisse se détend.',
-        'Choisis un seul objectif pour la semaine.',
-      ],
-      [
-        'Penser qu’un harnais règle tout seul le problème.',
-        'Tirer plus fort que lui.',
-        'Changer de méthode tous les jours.',
-      ],
-      'Pendant 3 balades, note les 3 moments où la laisse se tend le plus.',
-    ],
-    [
-      'premium-02',
-      'Promenade sans tirer',
-      'Récompenser la laisse détendue',
-      'Intermédiaire',
-      '10 min',
-      'Lui apprendre que marcher avec une laisse souple permet d’avancer.',
-      'Avant de corriger le tirage, il faut montrer au chien quel comportement rapporte quelque chose.',
-      [
-        'Commence dans une rue calme.',
-        'Dès que la laisse forme un léger U, dis “oui”.',
-        'Récompense près de ta jambe.',
-        'Si la laisse se tend, arrête-toi.',
-        'Repars quand elle se détend.',
-      ],
-      [
-        'Attendre une marche parfaite pour récompenser.',
-        'Donner la friandise trop loin de toi.',
-        'Continuer à avancer quand il tire fort.',
-      ],
-      'Fais 5 minutes de laisse détendue avant chaque vraie balade.',
-    ],
-    [
-      'premium-03',
-      'Promenade sans tirer',
-      'Gérer les odeurs obsessionnelles',
-      'Intermédiaire',
-      '12 min',
-      'Lui permettre de renifler sans transformer chaque poteau en bras de fer.',
-      'Renifler est un besoin naturel. On ne l’interdit pas, on met un cadre clair entre exploration et marche.',
-      [
-        'Choisis un mot d’autorisation : “va renifler”.',
-        'Choisis un mot de départ : “on y va”.',
-        'Récompense dès qu’il quitte une odeur pour te suivre.',
-        'Alternez pauses odeurs et quelques pas de marche.',
-        'Augmente progressivement les départs d’odeur réussis.',
-      ],
-      [
-        'Interdire toutes les odeurs.',
-        'Tirer sèchement sur la laisse.',
-        'Ne pas récompenser quand il accepte de repartir.',
-      ],
-      'Sur une balade, autorise 5 zones de reniflage puis demande de repartir.',
-    ],
-    [
-      'premium-04',
-      'Promenade sans tirer',
-      'Croiser un chien calmement',
-      'Avancé',
-      '12 min',
-      'Réduire l’excitation ou la tension lors des croisements avec d’autres chiens.',
-      'Le croisement est difficile parce qu’il mélange émotion, distance et frustration. On travaille avant l’explosion.',
-      [
-        'Repère l’autre chien avant que ton boubou fixe trop.',
-        'Augmente la distance si nécessaire.',
-        'Dis son prénom et récompense le regard vers toi.',
-        'Avance en arc de cercle plutôt qu’en face-à-face.',
-        'Récompense après le croisement quand il redescend.',
-      ],
-      [
-        'Attendre qu’il aboie pour réagir.',
-        'Forcer un face-à-face en laisse courte.',
-        'Le gronder alors qu’il est déjà débordé.',
-      ],
-      'Travaille uniquement à distance confortable pendant une semaine.',
-    ],
-    [
-      'premium-05',
-      'Promenade sans tirer',
-      'Le demi-tour magique',
-      'Intermédiaire',
-      '8 min',
-      'Utiliser le changement de direction pour récupérer l’attention sans tirer.',
-      'Le demi-tour apprend au chien à rester connecté à toi, car la balade devient moins automatique.',
-      [
-        'Avance lentement dans un endroit calme.',
-        'Dis “demi-tour” avec une voix joyeuse.',
-        'Tourne en invitant ton chien avec ton corps.',
-        'Récompense dès qu’il revient vers toi.',
-        'Utilise-le ensuite avant les déclencheurs.',
-      ],
-      [
-        'Faire demi-tour brutalement.',
-        'L’utiliser seulement quand il tire déjà très fort.',
-        'Oublier de récompenser le retour vers toi.',
-      ],
-      'Fais 10 demi-tours joyeux pendant une balade calme.',
-    ],
-    [
-      'premium-06',
-      'Rester seul',
-      'Préparer les faux départs',
-      'Intermédiaire',
-      '10 min',
-      'Désensibiliser ton chien aux signes de départ comme les clés, le manteau ou les chaussures.',
-      'Certains chiens stressent avant même que tu partes. Ils ont appris que certains gestes annoncent l’absence.',
-      [
-        'Prends tes clés puis repose-les sans sortir.',
-        'Mets ton manteau puis enlève-le.',
-        'Ouvre la porte puis reste à l’intérieur.',
-        'Reste neutre, sans grand au revoir.',
-        'Répète plusieurs petites scènes dans la journée.',
-      ],
-      [
-        'Faire un faux départ trop long dès le début.',
-        'Rassurer avec une voix inquiète.',
-        'Partir vraiment quand il est déjà paniqué.',
-      ],
-      'Fais 5 faux départs très courts par jour pendant 5 jours.',
-    ],
-    [
-      'premium-07',
-      'Rester seul',
-      'Créer une zone rassurante',
-      'Intermédiaire',
-      '12 min',
-      'Préparer un espace où ton chien peut se poser pendant tes absences.',
-      'La zone de solitude doit annoncer confort et sécurité, pas abandon ou punition.',
-      [
-        'Choisis un coin sécurisé avec panier et eau.',
-        'Ajoute une odeur familière et une occupation calme.',
-        'Fais-le y aller quand tu es présent.',
-        'Ferme quelques secondes puis rouvre avant l’inquiétude.',
-        'Augmente très progressivement.',
-      ],
-      [
-        'Utiliser cette zone uniquement quand tu pars.',
-        'Y envoyer le chien après une bêtise.',
-        'Choisir un lieu trop isolé.',
-      ],
-      'Propose une occupation dans sa zone 10 minutes par jour pendant une semaine.',
-    ],
-    [
-      'premium-08',
-      'Rester seul',
-      'Augmenter l’absence progressivement',
-      'Avancé',
-      '15 min',
-      'Allonger les absences sans dépasser le seuil de stress de ton chien.',
-      'Si ton chien panique à 2 minutes, partir 30 minutes ne l’entraîne pas. Cela confirme son stress.',
-      [
-        'Commence par 5 à 10 secondes derrière la porte.',
-        'Reviens avant les pleurs ou l’agitation.',
-        'Augmente par petits paliers.',
-        'Si le stress revient, redescends au palier précédent.',
-        'Garde les départs et retours neutres.',
-      ],
-      [
-        'Monter trop vite en durée.',
-        'Rentrer uniquement quand il aboie fort.',
-        'Faire des adieux très émotionnels.',
-      ],
-      'Crée une échelle d’absence de 10 secondes à 5 minutes.',
-    ],
-    [
-      'premium-09',
-      'Rester seul',
-      'Gérer les retours à la maison',
-      'Intermédiaire',
-      '8 min',
-      'Éviter de renforcer une excitation excessive à ton retour.',
-      'Le retour peut devenir explosif. Il faut garder l’émotion positive tout en apprenant la redescente.',
-      [
-        'Entre calmement.',
-        'Pose tes affaires sans crier son prénom.',
-        'Attends quelques secondes de calme avant de le saluer.',
-        'Salue-le quand ses quatre pattes sont au sol.',
-        'Ignore les sauts sans repousser brutalement.',
-      ],
-      [
-        'Créer une fête énorme à chaque retour.',
-        'Gronder les sauts tout en donnant de l’attention.',
-        'Ignorer le chien alors qu’il est enfin calme.',
-      ],
-      'Pendant une semaine, fais des retours calmes même après une absence courte.',
-    ],
-    [
-      'premium-10',
-      'Rester seul',
-      'Occupation intelligente pendant l’absence',
-      'Tous niveaux',
-      '10 min',
-      'Utiliser les occupations pour aider ton chien à se poser, sans cacher un vrai stress.',
-      'Un jouet d’occupation peut aider, mais il ne remplace pas un vrai apprentissage progressif de la solitude.',
-      [
-        'Teste l’occupation quand tu es présent.',
-        'Vérifie qu’il ne détruit pas l’objet.',
-        'Réserve certaines occupations aux moments calmes.',
-        'Retire l’objet s’il monte trop en excitation.',
-        'Observe s’il se pose vraiment après.',
-      ],
-      [
-        'Donner un objet dangereux sans test.',
-        'Penser qu’un jouet suffit en cas de panique.',
-        'Laisser uniquement des objets très excitants.',
-      ],
-      'Teste deux occupations différentes et note laquelle l’apaise le plus.',
-    ],
-    [
-      'premium-11',
-      'Stop aboiements',
-      'Identifier le déclencheur des aboiements',
-      'Intermédiaire',
-      '10 min',
-      'Comprendre pourquoi ton chien aboie avant de chercher à arrêter le comportement.',
-      'Un aboiement peut venir de l’alerte, de la peur, de l’excitation, de la frustration ou d’une demande d’attention.',
-      [
-        'Note l’heure, le lieu et ce qui se passe juste avant.',
-        'Classe le déclencheur : bruit, personne, chien, ennui, demande ou peur.',
-        'Observe son corps : tendu, joyeux, inquiet ou frustré.',
-        'Évite de crier immédiatement.',
-        'Choisis une stratégie adaptée à la cause principale.',
-      ],
-      [
-        'Traiter tous les aboiements pareil.',
-        'Crier, ce qui ajoute du bruit au bruit.',
-        'Récompenser sans le vouloir les aboiements de demande.',
-      ],
-      'Pendant 3 jours, note les 5 aboiements les plus fréquents.',
+      {
+        id: "premium-01",
+        category: "Promenade sans tirer",
+        title: "Comprendre pourquoi il tire en laisse",
+        level: "Intermédiaire",
+        duration: "10 min",
+        goal: "Identifier la vraie cause du tirage pour choisir la bonne stratégie.",
+        intro: "Un bouledogue ne tire pas pour dominer. Il tire souvent parce qu’il est excité, attiré par les odeurs, frustré par la laisse ou parce qu’il a appris que tirer permet d’avancer.",
+        why: "Avant de corriger le tirage, il faut comprendre ce qui le déclenche. Un chien qui tire par excitation ne se travaille pas exactement comme un chien qui tire par peur ou par frustration.",
+        before: [
+          "Prévois une balade courte, sans objectif de distance.",
+          "Utilise un harnais confortable.",
+          "Prends des récompenses faciles à donner dehors.",
+          "Observe sans corriger pendant quelques minutes.",
+          "Choisis un trajet simple pour mieux analyser son comportement."
+        ],
+        progress: [
+          "Balade 1 : observe les moments où la laisse se tend.",
+          "Balade 2 : note les déclencheurs principaux.",
+          "Balade 3 : récompense les moments de laisse détendue.",
+          "Balade 4 : évite volontairement les zones trop difficiles.",
+          "Balade 5 : commence à anticiper avant qu’il tire."
+        ],
+        steps: [
+          "Observe quand il tire : début de balade, odeurs, chiens, humains ou retour maison.",
+          "Note si la laisse est tendue tout le temps ou seulement par moments.",
+          "Ralentis avant les zones difficiles.",
+          "Récompense chaque moment où la laisse se détend.",
+          "Choisis un seul déclencheur à travailler cette semaine."
+        ],
+        success: [
+          "Tu identifies les moments précis où il tire.",
+          "Tu comprends mieux ce qui l’excite ou le frustre.",
+          "La laisse se détend plus souvent.",
+          "Tu anticipes avant qu’il parte devant.",
+          "Les balades deviennent moins conflictuelles."
+        ],
+        mistakes: [
+          "Penser qu’un harnais règle tout seul le problème.",
+          "Tirer plus fort que lui.",
+          "Changer de méthode tous les jours.",
+          "Le gronder sans lui montrer quoi faire.",
+          "Travailler dans un lieu trop stimulant dès le départ."
+        ],
+        troubleshooting: [
+          "S’il tire dès la sortie, commence par quelques secondes de calme devant la porte.",
+          "S’il tire vers les odeurs, prévois des pauses reniflage autorisées.",
+          "S’il tire vers les chiens, augmente la distance.",
+          "S’il tire tout le temps, raccourcis la balade éducative.",
+          "S’il sature, termine par une réussite facile."
+        ],
+        homework: "Pendant 3 balades, note les 3 moments où la laisse se tend le plus."
+      },
+      {
+        id: "premium-02",
+        category: "Promenade sans tirer",
+        title: "Récompenser la laisse détendue",
+        level: "Intermédiaire",
+        duration: "10 min",
+        goal: "Lui apprendre que marcher avec une laisse souple permet d’avancer.",
+        intro: "Beaucoup de chiens tirent parce qu’ils ont appris que tirer les rapproche de ce qu’ils veulent. Cette leçon inverse la logique : la laisse détendue devient ce qui fait avancer.",
+        why: "Si ton chien n’est jamais récompensé quand il marche bien, il ne peut pas deviner ce que tu attends. Récompenser la laisse détendue rend le bon comportement beaucoup plus clair.",
+        before: [
+          "Choisis une rue calme.",
+          "Prépare de petites friandises.",
+          "Garde la laisse assez courte pour rester en sécurité, mais pas tendue.",
+          "Ne cherche pas une marche parfaite.",
+          "Travaille seulement 5 à 10 minutes."
+        ],
+        progress: [
+          "Jour 1 : récompense chaque seconde de laisse détendue.",
+          "Jour 2 : récompense tous les 2 ou 3 pas calmes.",
+          "Jour 3 : ajoute de petits changements de direction.",
+          "Jour 4 : travaille dans une rue un peu plus vivante.",
+          "Jour 5 : récompense moins souvent mais mieux."
+        ],
+        steps: [
+          "Commence dans un endroit calme.",
+          "Dès que la laisse forme un léger U, dis “oui”.",
+          "Récompense près de ta jambe.",
+          "Si la laisse se tend, arrête-toi calmement.",
+          "Repars dès qu’elle se détend."
+        ],
+        success: [
+          "La laisse reste souple plus longtemps.",
+          "Ton chien revient plus souvent vers toi.",
+          "Il comprend que tirer ne fait pas avancer.",
+          "Les arrêts deviennent moins fréquents.",
+          "Tu peux marcher plus calmement."
+        ],
+        mistakes: [
+          "Attendre une marche parfaite pour récompenser.",
+          "Donner la friandise trop loin de toi.",
+          "Continuer à avancer quand il tire fort.",
+          "Tirer en arrière pour le ramener.",
+          "Travailler trop longtemps."
+        ],
+        troubleshooting: [
+          "S’il tire immédiatement, commence dans un couloir ou un jardin.",
+          "S’il saute sur la friandise, donne-la plus bas et plus calmement.",
+          "S’il repart devant après la récompense, fais seulement 2 pas puis récompense.",
+          "S’il ignore les friandises, choisis un lieu plus calme.",
+          "S’il s’énerve, fais une pause reniflage."
+        ],
+        homework: "Fais 5 minutes de laisse détendue avant chaque vraie balade."
+      },
+      {
+        id: "premium-03",
+        category: "Promenade sans tirer",
+        title: "Gérer les odeurs obsessionnelles",
+        level: "Intermédiaire",
+        duration: "12 min",
+        goal: "Lui permettre de renifler sans transformer chaque poteau en bras de fer.",
+        intro: "Renifler est un besoin naturel. Pour un bouledogue, les odeurs peuvent être plus fortes qu’une friandise. Le but n’est donc pas de les interdire, mais de les encadrer.",
+        why: "Si tu empêches toutes les odeurs, la promenade devient frustrante. Si tu le laisses décider de tout, tu perds le contrôle. Cette leçon crée un équilibre entre liberté et cadre.",
+        before: [
+          "Choisis un trajet avec quelques zones d’odeurs.",
+          "Prévois un mot d’autorisation.",
+          "Prévois un mot pour repartir.",
+          "Ne travaille pas quand ton chien est déjà surexcité.",
+          "Accepte que renifler fasse partie de la balade."
+        ],
+        progress: [
+          "Jour 1 : autorise quelques pauses reniflage libres.",
+          "Jour 2 : ajoute le mot “va renifler”.",
+          "Jour 3 : ajoute le mot “on y va”.",
+          "Jour 4 : récompense chaque départ volontaire.",
+          "Jour 5 : alterne marche et pauses odeurs."
+        ],
+        steps: [
+          "Choisis un mot d’autorisation : “va renifler”.",
+          "Laisse-le explorer quelques secondes.",
+          "Dis “on y va” avec une voix calme.",
+          "Récompense dès qu’il quitte l’odeur pour te suivre.",
+          "Renvoie-le parfois renifler pour éviter la frustration."
+        ],
+        success: [
+          "Il accepte de quitter une odeur plus facilement.",
+          "Il comprend quand il peut renifler.",
+          "Il se frustre moins.",
+          "Tu reprends la marche sans tirer.",
+          "La promenade devient plus équilibrée."
+        ],
+        mistakes: [
+          "Interdire toutes les odeurs.",
+          "Tirer sèchement sur la laisse.",
+          "Ne pas récompenser quand il accepte de repartir.",
+          "Attendre qu’il soit totalement bloqué sur l’odeur.",
+          "Utiliser toujours le même poteau difficile pour commencer."
+        ],
+        troubleshooting: [
+          "S’il ne repart pas, attends qu’il relève légèrement la tête.",
+          "S’il résiste, propose une récompense plus forte.",
+          "S’il tire vers toutes les odeurs, augmente les pauses autorisées.",
+          "S’il s’énerve, raccourcis les temps de reniflage.",
+          "S’il ignore “on y va”, retravaille à la maison avec un jouet ou une friandise."
+        ],
+        homework: "Sur une balade, autorise 5 zones de reniflage puis demande de repartir calmement."
+      },
+      {
+        id: "premium-04",
+        category: "Promenade sans tirer",
+        title: "Croiser un chien calmement",
+        level: "Avancé",
+        duration: "12 min",
+        goal: "Réduire l’excitation ou la tension lors des croisements avec d’autres chiens.",
+        intro: "Les croisements sont difficiles parce qu’ils mélangent émotion, frustration et distance. Ton bouledogue peut vouloir aller voir, aboyer, tirer ou se figer.",
+        why: "Un croisement réussi n’est pas forcément un chien parfaitement immobile. C’est un chien qui reste suffisamment disponible pour t’écouter et passer sans exploser.",
+        before: [
+          "Travaille à distance au début.",
+          "Prévois des friandises très motivantes.",
+          "Évite les rues trop étroites.",
+          "Ne force jamais un face-à-face.",
+          "Observe le langage corporel de ton chien."
+        ],
+        progress: [
+          "Étape 1 : observer un chien de loin.",
+          "Étape 2 : récompenser le regard vers toi.",
+          "Étape 3 : passer en arc de cercle.",
+          "Étape 4 : réduire légèrement la distance.",
+          "Étape 5 : travailler des croisements plus réels."
+        ],
+        steps: [
+          "Repère l’autre chien avant que ton bouledogue fixe trop.",
+          "Augmente la distance si nécessaire.",
+          "Dis son prénom et récompense le regard vers toi.",
+          "Avance en arc de cercle plutôt qu’en face-à-face.",
+          "Récompense après le croisement quand il redescend."
+        ],
+        success: [
+          "Il fixe moins longtemps les autres chiens.",
+          "Il reprend plus vite contact avec toi.",
+          "Il aboie moins fort ou moins longtemps.",
+          "Il accepte de passer à distance.",
+          "Il récupère plus vite après le croisement."
+        ],
+        mistakes: [
+          "Attendre qu’il aboie pour réagir.",
+          "Forcer un face-à-face en laisse courte.",
+          "Le gronder alors qu’il est déjà débordé.",
+          "Le laisser tirer jusqu’à l’autre chien.",
+          "Réduire la distance trop vite."
+        ],
+        troubleshooting: [
+          "S’il explose, tu étais probablement trop près.",
+          "S’il refuse les friandises, augmente la distance.",
+          "S’il tire fort, fais demi-tour calmement.",
+          "S’il se fige, laisse-lui plus d’espace.",
+          "S’il progresse, garde plusieurs réussites faciles avant de compliquer."
+        ],
+        homework: "Travaille uniquement à distance confortable pendant une semaine."
+      },
+      {
+        id: "premium-05",
+        category: "Promenade sans tirer",
+        title: "Le demi-tour magique",
+        level: "Intermédiaire",
+        duration: "8 min",
+        goal: "Utiliser le changement de direction pour récupérer l’attention sans tirer.",
+        intro: "Le demi-tour est un outil simple mais très utile. Il permet d’éviter un déclencheur, de récupérer l’attention et de rendre la balade moins automatique.",
+        why: "Plutôt que de tirer ton chien en arrière, tu lui apprends à suivre ton mouvement. C’est plus doux, plus clair et souvent plus efficace.",
+        before: [
+          "Travaille d’abord dans un lieu calme.",
+          "Garde une voix joyeuse.",
+          "Prépare des récompenses.",
+          "Ne fais pas de mouvement brusque.",
+          "Utilise toujours le même mot."
+        ],
+        progress: [
+          "Jour 1 : demi-tours sans distraction.",
+          "Jour 2 : demi-tours avec une légère distraction.",
+          "Jour 3 : demi-tours avant une odeur.",
+          "Jour 4 : demi-tours avant un croisement difficile.",
+          "Jour 5 : demi-tours intégrés dans la balade."
+        ],
+        steps: [
+          "Avance lentement dans un endroit calme.",
+          "Dis “demi-tour” avec une voix joyeuse.",
+          "Tourne en invitant ton chien avec ton corps.",
+          "Récompense dès qu’il revient vers toi.",
+          "Utilise-le ensuite avant les déclencheurs."
+        ],
+        success: [
+          "Ton chien te suit plus facilement.",
+          "Tu récupères son attention sans tirer.",
+          "Les changements de direction deviennent fluides.",
+          "Il anticipe moins en tirant devant.",
+          "Tu évites plus facilement les situations difficiles."
+        ],
+        mistakes: [
+          "Faire demi-tour brutalement.",
+          "L’utiliser seulement quand il tire déjà très fort.",
+          "Oublier de récompenser le retour vers toi.",
+          "Tourner trop vite.",
+          "Dire le mot quand le chien est déjà hors contrôle."
+        ],
+        troubleshooting: [
+          "S’il ne suit pas, commence avec une friandise près de toi.",
+          "S’il tire dans l’autre sens, ralentis ton mouvement.",
+          "S’il s’excite, fais moins de répétitions.",
+          "S’il ignore le mot, retravaille sans distraction.",
+          "S’il bloque, encourage-le avec ton corps plutôt qu’avec la laisse."
+        ],
+        homework: "Fais 10 demi-tours joyeux pendant une balade calme."
+      },
+      {
+        id: "premium-06",
+        category: "Rester seul",
+        title: "Préparer les faux départs",
+        level: "Intermédiaire",
+        duration: "10 min",
+        goal: "Désensibiliser ton chien aux signes de départ comme les clés, le manteau ou les chaussures.",
+        intro: "Certains chiens stressent avant même que l’humain parte. Ils repèrent les chaussures, les clés, le sac ou le manteau et montent déjà en inquiétude.",
+        why: "Si ton chien panique avant le départ, il sera difficile pour lui de rester calme ensuite. Les faux départs rendent ces signaux plus neutres.",
+        before: [
+          "Choisis un moment calme.",
+          "Ne pars pas vraiment au début.",
+          "Garde une attitude naturelle.",
+          "Ne rassure pas avec une voix inquiète.",
+          "Fais plusieurs répétitions très courtes."
+        ],
+        progress: [
+          "Jour 1 : prendre les clés puis les reposer.",
+          "Jour 2 : mettre les chaussures sans sortir.",
+          "Jour 3 : ouvrir la porte sans partir.",
+          "Jour 4 : sortir 2 secondes puis revenir.",
+          "Jour 5 : varier les gestes dans le désordre."
+        ],
+        steps: [
+          "Prends tes clés puis repose-les sans sortir.",
+          "Mets ton manteau puis enlève-le.",
+          "Ouvre la porte puis reste à l’intérieur.",
+          "Reste neutre, sans grand au revoir.",
+          "Répète plusieurs petites scènes dans la journée."
+        ],
+        success: [
+          "Ton chien réagit moins aux clés.",
+          "Il reste plus calme quand tu mets tes chaussures.",
+          "Il ne te suit plus systématiquement jusqu’à la porte.",
+          "Les départs deviennent moins chargés émotionnellement.",
+          "Il récupère plus vite après les signaux de départ."
+        ],
+        mistakes: [
+          "Faire un faux départ trop long dès le début.",
+          "Rassurer avec une voix inquiète.",
+          "Partir vraiment quand il est déjà paniqué.",
+          "Faire une seule grosse séance.",
+          "Le gronder s’il s’inquiète."
+        ],
+        troubleshooting: [
+          "S’il se lève dès les clés, commence avec un seul bruit de clés.",
+          "S’il aboie, réduis la difficulté.",
+          "S’il colle trop, travaille d’abord le panier.",
+          "S’il panique, ne passe pas encore aux vraies absences.",
+          "S’il reste calme, augmente très progressivement."
+        ],
+        homework: "Fais 5 faux départs très courts par jour pendant 5 jours."
+      },
+      {
+        id: "premium-07",
+        category: "Rester seul",
+        title: "Créer une zone rassurante",
+        level: "Intermédiaire",
+        duration: "12 min",
+        goal: "Préparer un espace où ton chien peut se poser pendant tes absences.",
+        intro: "La zone de solitude ne doit pas être vécue comme une punition. Elle doit annoncer sécurité, confort et occupations calmes.",
+        why: "Un espace rassurant aide ton chien à se sentir moins perdu quand tu t’absentes. Cela peut limiter les déplacements anxieux, les destructions et les pleurs.",
+        before: [
+          "Choisis un lieu calme mais pas totalement isolé.",
+          "Ajoute un panier confortable.",
+          "Laisse de l’eau accessible.",
+          "Retire les objets dangereux.",
+          "Teste la zone quand tu es présent."
+        ],
+        progress: [
+          "Jour 1 : découvrir la zone avec des friandises.",
+          "Jour 2 : y rester quelques secondes.",
+          "Jour 3 : fermer brièvement une barrière ou une porte.",
+          "Jour 4 : ajouter une occupation calme.",
+          "Jour 5 : faire une mini absence."
+        ],
+        steps: [
+          "Choisis un coin sécurisé avec panier et eau.",
+          "Ajoute une odeur familière et une occupation calme.",
+          "Fais-le y aller quand tu es présent.",
+          "Ferme quelques secondes puis rouvre avant l’inquiétude.",
+          "Augmente très progressivement."
+        ],
+        success: [
+          "Ton chien entre plus facilement dans sa zone.",
+          "Il s’y couche même quand tu es là.",
+          "Il accepte de rester quelques secondes seul.",
+          "Il explore moins anxieusement la maison.",
+          "Il associe cet endroit à quelque chose de positif."
+        ],
+        mistakes: [
+          "Utiliser cette zone uniquement quand tu pars.",
+          "Y envoyer le chien après une bêtise.",
+          "Choisir un lieu trop isolé.",
+          "Le laisser paniquer dedans.",
+          "Mettre trop d’objets excitants."
+        ],
+        troubleshooting: [
+          "S’il refuse d’y aller, ajoute des récompenses dans la zone.",
+          "S’il ressort immédiatement, ne ferme pas encore.",
+          "S’il détruit, vérifie que l’occupation est adaptée.",
+          "S’il aboie, raccourcis la durée.",
+          "S’il dort ailleurs, déplace légèrement la zone."
+        ],
+        homework: "Propose une occupation dans sa zone 10 minutes par jour pendant une semaine."
+      },
+      {
+        id: "premium-08",
+        category: "Rester seul",
+        title: "Augmenter l’absence progressivement",
+        level: "Avancé",
+        duration: "15 min",
+        goal: "Allonger les absences sans dépasser le seuil de stress de ton chien.",
+        intro: "Si ton chien panique à 2 minutes, partir 30 minutes ne l’entraîne pas. Cela renforce plutôt son inquiétude. La progression doit être très graduelle.",
+        why: "La solitude s’apprend par petites réussites. Plus ton chien accumule des absences calmes, plus il prend confiance.",
+        before: [
+          "Prépare une zone calme.",
+          "Sors ton chien avant l’exercice.",
+          "Choisis un moment où il est détendu.",
+          "Prévois des durées très courtes au départ.",
+          "Note les réactions après chaque essai."
+        ],
+        progress: [
+          "Jour 1 : 5 à 10 secondes.",
+          "Jour 2 : 20 à 30 secondes.",
+          "Jour 3 : 1 minute si tout va bien.",
+          "Jour 4 : 2 à 3 minutes.",
+          "Jour 5 et plus : augmenter seulement si les étapes précédentes sont calmes."
+        ],
+        steps: [
+          "Commence par 5 à 10 secondes derrière la porte.",
+          "Reviens avant les pleurs ou l’agitation.",
+          "Augmente par petits paliers.",
+          "Si le stress revient, redescends au palier précédent.",
+          "Garde les départs et retours neutres."
+        ],
+        success: [
+          "Ton chien reste calme pendant les courtes absences.",
+          "Il ne se précipite pas systématiquement à ton retour.",
+          "Il peut se coucher après ton départ.",
+          "Il récupère rapidement.",
+          "Les durées augmentent sans panique."
+        ],
+        mistakes: [
+          "Monter trop vite en durée.",
+          "Rentrer uniquement quand il aboie fort.",
+          "Faire des adieux très émotionnels.",
+          "Comparer son chien à un autre.",
+          "Ignorer les signes de stress."
+        ],
+        troubleshooting: [
+          "S’il pleure avant 30 secondes, reviens à 5 secondes.",
+          "S’il gratte la porte, travaille d’abord la zone rassurante.",
+          "S’il détruit, réduis la durée et augmente les occupations calmes.",
+          "S’il panique vite, ne force pas.",
+          "S’il progresse, garde plusieurs répétitions faciles."
+        ],
+        homework: "Crée une échelle d’absence de 10 secondes à 5 minutes."
+      },
+      {
+        id: "premium-09",
+        category: "Rester seul",
+        title: "Gérer les retours à la maison",
+        level: "Intermédiaire",
+        duration: "8 min",
+        goal: "Éviter de renforcer une excitation excessive à ton retour.",
+        intro: "Le retour peut être très intense pour un bouledogue. Il est content, soulagé, excité. L’objectif est de garder l’émotion positive tout en apprenant à redescendre.",
+        why: "Si chaque retour devient une explosion, ton chien peut attendre ce moment avec encore plus de tension. Des retours calmes aident à rendre les absences plus ordinaires.",
+        before: [
+          "Prévois de rentrer calmement.",
+          "Évite les grandes phrases aiguës dès l’entrée.",
+          "Ignore les sauts sans repousser brutalement.",
+          "Récompense les pattes au sol.",
+          "Garde la même règle à chaque retour."
+        ],
+        progress: [
+          "Jour 1 : rentrer sans grande excitation.",
+          "Jour 2 : attendre 2 secondes de calme.",
+          "Jour 3 : saluer seulement pattes au sol.",
+          "Jour 4 : demander un assis si possible.",
+          "Jour 5 : garder le rituel même après une longue absence."
+        ],
+        steps: [
+          "Entre calmement.",
+          "Pose tes affaires sans crier son prénom.",
+          "Attends quelques secondes de calme avant de le saluer.",
+          "Salue-le quand ses quatre pattes sont au sol.",
+          "Ignore les sauts sans repousser brutalement."
+        ],
+        success: [
+          "Ton chien saute moins au retour.",
+          "Il redescend plus vite.",
+          "Il garde plus facilement les pattes au sol.",
+          "Les retrouvailles restent joyeuses mais moins explosives.",
+          "Les retours deviennent plus prévisibles."
+        ],
+        mistakes: [
+          "Créer une fête énorme à chaque retour.",
+          "Gronder les sauts tout en donnant de l’attention.",
+          "Ignorer le chien alors qu’il est enfin calme.",
+          "Repousser avec les mains, ce qui peut l’exciter davantage.",
+          "Changer de règle selon ton humeur."
+        ],
+        troubleshooting: [
+          "S’il saute beaucoup, tourne légèrement le corps sans parler.",
+          "S’il aboie, attends une micro-pause de silence.",
+          "S’il attrape les vêtements, propose un jouet calme.",
+          "S’il devient incontrôlable, réduis ton énergie.",
+          "S’il se calme, récompense immédiatement."
+        ],
+        homework: "Pendant une semaine, fais des retours calmes même après une absence courte."
+      },
+      {
+        id: "premium-10",
+        category: "Rester seul",
+        title: "Occupation intelligente pendant l’absence",
+        level: "Tous niveaux",
+        duration: "10 min",
+        goal: "Utiliser les occupations pour aider ton chien à se poser sans masquer un vrai stress.",
+        intro: "Une occupation peut aider ton chien à vivre une absence plus calmement. Mais elle ne doit pas servir à cacher une vraie panique.",
+        why: "Une bonne occupation canalise, apaise et donne une activité simple au chien. Mal choisie, elle peut au contraire l’exciter ou devenir dangereuse.",
+        before: [
+          "Teste toujours l’objet quand tu es présent.",
+          "Vérifie qu’il ne peut pas avaler de morceau.",
+          "Choisis une occupation adaptée à sa mâchoire.",
+          "Évite les objets trop excitants.",
+          "Ne laisse rien de dangereux sans surveillance."
+        ],
+        progress: [
+          "Jour 1 : tester l’occupation en ta présence.",
+          "Jour 2 : l’utiliser dans sa zone calme.",
+          "Jour 3 : l’associer à une mini absence.",
+          "Jour 4 : varier les occupations.",
+          "Jour 5 : observer si elle l’aide vraiment à se poser."
+        ],
+        steps: [
+          "Teste l’occupation quand tu es présent.",
+          "Vérifie qu’il ne détruit pas l’objet.",
+          "Réserve certaines occupations aux moments calmes.",
+          "Retire l’objet s’il monte trop en excitation.",
+          "Observe s’il se pose vraiment après."
+        ],
+        success: [
+          "Ton chien s’occupe calmement.",
+          "Il ne détruit pas l’objet.",
+          "Il se couche après l’activité.",
+          "Il associe l’absence à un moment plus prévisible.",
+          "Il semble moins agité au départ."
+        ],
+        mistakes: [
+          "Donner un objet dangereux sans test.",
+          "Penser qu’un jouet suffit en cas de panique.",
+          "Laisser uniquement des objets très excitants.",
+          "Changer d’occupation tous les jours sans observer.",
+          "Confondre occupation et solution miracle."
+        ],
+        troubleshooting: [
+          "S’il détruit l’objet, choisis une option plus solide.",
+          "S’il s’excite, propose une activité plus calme.",
+          "S’il ignore l’objet, teste une odeur plus motivante.",
+          "S’il panique malgré tout, reviens au travail progressif de solitude.",
+          "S’il avale vite, privilégie les tapis de léchage ou jeux adaptés."
+        ],
+        homework: "Teste deux occupations différentes et note laquelle l’apaise le plus."
+      },
     ],
     [
       'premium-12',

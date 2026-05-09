@@ -1837,6 +1837,12 @@ useEffect(() => {
 <p>
   contact@bouledogue4ever.fr
 </p>
+<a
+  href="mailto:contact@bouledogue4ever.fr"
+  className="mt-6 inline-flex items-center rounded-2xl bg-[#101827] px-5 py-3 font-black text-white"
+>
+  Contacter le support
+</a>
       </div>
     </div>
   </div>

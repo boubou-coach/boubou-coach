@@ -73,3 +73,36 @@ svg {
     flex: 0 0 auto;
   }
 }
+
+@media (min-width: 700px) and (max-width: 1180px) {
+  .desktop-sidebar {
+    display: none !important;
+  }
+
+  .main-content {
+    width: 100%;
+    max-width: 100vw;
+  }
+
+  .app-shell {
+    overflow-x: hidden;
+  }
+
+  header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .mobile-bottom-nav {
+    display: block;
+  }
+}
+  .main-content {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .category-scroll {
+    max-width: 100%;
+    overflow-x: auto;
+  }

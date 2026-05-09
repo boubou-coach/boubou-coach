@@ -3352,8 +3352,9 @@ useEffect(() => {
   
   const [done, setDone] = useState<string[]>(() => {
     const saved = localStorage.getItem("boubou-done");
-    return saved ? JSON.parse(saved) : ["free-01", "free-02"];
+    return saved ? JSON.parse(saved) : [];
   });
+  
   const [dogSex, setDogSex] = useState(() => {
     return localStorage.getItem("boubou-dog-sex") || "Mâle";
   });
@@ -3505,7 +3506,7 @@ useEffect(() => {
               setDeferredPrompt(null);
             } else {
               alert(
-                "Sur mobile : ouvre le menu du navigateur puis choisis Ajouter à l’écran d’accueil."
+                "Sur iPhone/iPad : ouvre ce site avec Safari, appuie sur Partager, puis choisis Raccourci sur l’écran d’accueil."
               );
             }
           }}

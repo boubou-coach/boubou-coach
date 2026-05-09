@@ -45,7 +45,6 @@ type Lesson = {
 };
 
 const baseLessons: Lesson[] = [
-  {
     {
       id: "free-01",
       free: true,
@@ -587,8 +586,7 @@ const baseLessons: Lesson[] = [
       homework: "Fais un mini-test avec 3 récompenses différentes et classe-les de la moins motivante à la plus motivante."
     },
 
-  ...[
-    [
+
       {
         id: "premium-01",
         category: "Promenade sans tirer",
@@ -1119,6 +1117,28 @@ const baseLessons: Lesson[] = [
         ],
         homework: "Teste deux occupations différentes et note laquelle l’apaise le plus."
       },
+    
+    [
+      'premium-11',
+      'Stop aboiements',
+      'Identifier le déclencheur des aboiements',
+      'Intermédiaire',
+      '10 min',
+      'Comprendre pourquoi ton chien aboie avant de chercher à arrêter le comportement.',
+      'Un aboiement peut venir de l’alerte, de la peur, de l’excitation, de la frustration ou d’une demande d’attention.',
+      [
+        'Note l’heure, le lieu et ce qui se passe juste avant.',
+        'Classe le déclencheur : bruit, personne, chien, ennui, demande ou peur.',
+        'Observe son corps : tendu, joyeux, inquiet ou frustré.',
+        'Évite de crier immédiatement.',
+        'Choisis une stratégie adaptée à la cause principale.',
+      ],
+      [
+        'Traiter tous les aboiements pareil.',
+        'Crier, ce qui ajoute du bruit au bruit.',
+        'Récompenser sans le vouloir les aboiements de demande.',
+      ],
+      'Pendant 3 jours, note les 5 aboiements les plus fréquents.',
     ],
     [
       'premium-12',

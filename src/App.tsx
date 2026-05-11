@@ -1611,7 +1611,7 @@ export default function App() {
             >
               <Menu />
             </button>
- 
+
             <div>
               <p className="text-xs font-black uppercase tracking-[0.25em] text-amber-700">
                 Boubou Coach

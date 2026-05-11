@@ -1617,10 +1617,20 @@ export default function App() {
                 Boubou Coach
               </p>
               <button
-  onClick={() => {
+  onClick={async () => {
     window.gtag?.('event', 'install_click', {
       app_name: 'boubou_coach',
     });
+
+    if (deferredPrompt) {
+      deferredPrompt.prompt();
+      await deferredPrompt.userChoice;
+      setDeferredPrompt(null);
+    } else {
+      alert(
+        "Si le bouton ne lance pas l’installation, ouvre le menu du navigateur puis choisis « Ajouter à l’écran d’accueil »."
+      );
+    }
   }}
   className="mt-4 rounded-2xl bg-[#101827] px-5 py-3 text-sm font-black text-white"
 >

@@ -1634,7 +1634,7 @@ export default function App() {
   }}
   className="mt-4 rounded-2xl bg-[#101827] px-5 py-3 text-sm font-black text-white"
 >
-  Installer l’application
+  Installer l’application 
 </button>
               <h1 className="text-xl font-black tracking-tight lg:text-3xl">
                 Dressage bouledogue français
